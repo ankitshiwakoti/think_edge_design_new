@@ -8,12 +8,6 @@ const Footer = () => {
     <section
       className=" demo-wrap mt-3 pb-5 pt-5"
       style={{ position: "absolute", bottom: 0, width: "100%" }}
-      //   style={{
-      //     backgroundImage: `url(${footerbg.src})`,
-      //     width: "100%",
-      //     height: "100%",
-      //     opacity: "0.1",
-      //   }}
     >
       <Container className="demo-content">
         <Row>

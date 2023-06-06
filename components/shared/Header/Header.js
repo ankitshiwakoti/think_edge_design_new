@@ -68,23 +68,35 @@ const Header = () => {
                       SERVICES
                     </span>
                   </a>
-                  <div class="dropdown-menu">
-                    <div>
-                      <a class="dropdown-item" href="#">
-                        Action
+                  <div class="dropdown-menu rounded-0 p-0">
+                    <div className="  border-bottom">
+                      <a class=" drophov dropdown-item" href="#">
+                        BIM Modelling
                       </a>
                     </div>
-                    <div>
-                      <a class="dropdown-item" href="#">
-                        Another action
+                    <div className="border-bottom">
+                      <a class=" drophov dropdown-item" href="#">
+                        BIM Modelling
                       </a>
                     </div>
-                    <div>
-                      <hr class="dropdown-divider" />
+                    <div className="border-bottom">
+                      <a class="drophov dropdown-item" href="#">
+                        BIM Modelling
+                      </a>
                     </div>
-                    <div>
-                      <a class="dropdown-item" href="#">
-                        Something else here
+                    <div className="border-bottom">
+                      <a class="drophov dropdown-item" href="#">
+                        BIM Modelling
+                      </a>
+                    </div>
+                    <div className="border-bottom">
+                      <a class="drophov dropdown-item" href="#">
+                        BIM Modelling
+                      </a>
+                    </div>
+                    <div className="border-bottom">
+                      <a class="drophov dropdown-item" href="#">
+                        BIM Modelling
                       </a>
                     </div>
                   </div>

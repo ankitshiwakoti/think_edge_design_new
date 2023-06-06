@@ -67,6 +67,10 @@ h5 {
   color: #212121 !important;
 }
 
+.navhov:active {
+  border: none;
+}
+
 .nabbtnhov {
   font-family: Roboto Slab;
   color: #212121;
@@ -77,6 +81,11 @@ h5 {
 }
 .nabbtnhov:hover {
   background-color: #585757 !important;
+}
+
+.drophov:hover {
+  background-color: #000000 !important;
+  color: white !important;
 }
 
 /* footer */
