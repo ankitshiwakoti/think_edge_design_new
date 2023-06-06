@@ -36,7 +36,7 @@ const Header = () => {
           >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Offcanvas
+                THINK EDGE DESIGN
               </h5>
               <button
                 type="button"
@@ -50,25 +50,24 @@ const Header = () => {
                 <div class="  nav-item">
                   <a class="nav-link " aria-current="page" href="#">
                     <span className="navhov pb-4" style={{ color: "#ABABAB" }}>
-                      {" "}
-                      HOME{" "}
+                      HOME
                     </span>
                   </a>
                 </div>
 
                 <div class="  nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link  "
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <span className="navhov pb-4" style={{ color: "#ABABAB" }}>
-                      SERVICES
+                    <span className=" pb-4" style={{ color: "#ABABAB" }}>
+                      SERVICES <i class="bi bi-chevron-down"> </i>
                     </span>
                   </a>
-                  <div class="dropdown-menu rounded-0 p-0">
+                  <div class="dropdown-menu dropdown-content rounded-0 p-0">
                     <div className="  border-bottom">
                       <a class=" drophov dropdown-item" href="#">
                         BIM Modelling
@@ -110,7 +109,7 @@ const Header = () => {
                 </div>
                 <div class="nav-item dropdown">
                   <a
-                    class="nav-link navhov pb-4 dropdown-toggle"
+                    class="nav-link navhov pb-4"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -118,18 +117,6 @@ const Header = () => {
                     style={{ color: "#ABABAB" }}
                   >
                     <span className=""> BLOGS </span>
-                    {/* <svg
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M13.8531 0H12.4715C12.3775 0 12.2891 0.0390626 12.2339 0.103125L7.00035 6.22188L1.76684 0.103125C1.71158 0.0390626 1.62315 0 1.52921 0H0.147604C0.0278654 0 -0.0421358 0.115625 0.0278653 0.198438L6.52323 7.79375C6.75903 8.06875 7.24167 8.06875 7.47562 7.79375L13.971 0.198438C14.0428 0.115625 13.9728 0 13.8531 0Z"
-                        fill="#0D3437"
-                      />
-                    </svg> */}
 
                     <i class="bi bi-chevron-down"></i>
                   </a>

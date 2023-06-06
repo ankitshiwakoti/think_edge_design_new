@@ -88,6 +88,21 @@ h5 {
   color: white !important;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* footer */
 
 .fofont {
