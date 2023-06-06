@@ -1,0 +1,24 @@
+
+//custom variables
+
+$primary:#212121;
+$secondary: #525252;
+$warning: #fed6a8;
+$primarydark: #0d3437;
+$warninglight: #f3f0ee;
+$pagination-color: none;
+$pagination-bg: none;
+$pagination-border-color: none;
+$navcolor: #f30c0c;
+
+
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+
+$custom-theme-colors: (
+  'warninglight': $warninglight,
+  'primarydark': $primarydark,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+@import '../node_modules/bootstrap/scss/bootstrap';
