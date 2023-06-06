@@ -7,9 +7,5 @@ import Navbar from "@/components/shared/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return (
-    <>
-      <Navbar />
-    </>
-  );
+  return <></>;
 }

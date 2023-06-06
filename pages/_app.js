@@ -3,6 +3,7 @@ import Head from "next/head";
 import "../sass/main.scss";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Footer from "@/components/shared/Footer/footer";
+import Navbar from "@/components/shared/Header";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -45,7 +46,7 @@ export default function App({ Component, pageProps }) {
           crossorigin="anonymous"
         /> */}
       </Head>
-
+      <Navbar />
       <Component {...pageProps} />
       <Footer />
     </>

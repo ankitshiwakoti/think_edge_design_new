@@ -2,8 +2,11 @@ import React from "react";
 
 const Header = () => {
   return (
-    <section style={{ backgroundColor: "#F5F5F5" }}>
-      <nav class="navbar navbar-expand-md  fixed-top">
+    <section className="mb-5 pb-3">
+      <nav
+        class="navbar navbar-expand-md pt-4 fixed-top"
+        style={{ backgroundColor: "#FFFFFF" }}
+      >
         <div class="container">
           <a class="navbar-brand" href="#">
             <img

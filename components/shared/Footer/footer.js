@@ -1,10 +1,21 @@
+import Link from "next/link";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import footerbg from "../../../public/assets/footerbackground.jpg";
 
 const Footer = () => {
   return (
-    <section className="py-md-5  mt-5 pt-5">
-      <Container>
+    <section
+      className=" demo-wrap mt-3 pb-5 pt-5"
+      style={{ position: "absolute", bottom: 0, width: "100%" }}
+      //   style={{
+      //     backgroundImage: `url(${footerbg.src})`,
+      //     width: "100%",
+      //     height: "100%",
+      //     opacity: "0.1",
+      //   }}
+    >
+      <Container className="demo-content">
         <Row>
           <Col xs={12} sm={6} md={3} lg={3}>
             <Row>
@@ -93,6 +104,17 @@ const Footer = () => {
               </div>
             </div>
           </Col>
+        </Row>
+        <hr />
+        <Row className="d-flex pb-2  align-items-start">
+          <div className="text-start rights">
+            Copyright ©{" "}
+            <b className="rights m-0 p-0">{new Date().getFullYear()}</b>
+            <Link href="/" className=" ms-1 rights">
+              Jobrecruitment.com.np
+            </Link>{" "}
+            ALL RIGHTS RESERVED.
+          </div>
         </Row>
       </Container>
     </section>
