@@ -1,17 +1,16 @@
 import Link from "next/link";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import footerbg from "../../../public/assets/footerbackground.jpg";
 
 const Footer = () => {
   return (
     <section
       className=" demo-wrap mt-3 pb-5 pt-5"
-      style={{ position: "absolute", bottom: 0, width: "100%" }}
+      // style={{ position: "absolute", bottom: 0, width: "100%" }}
     >
       <Container className="demo-content">
         <Row>
-          <Col xs={12} sm={6} md={3} lg={3}>
+          <Col xs={12} sm={12} md={3} lg={3}>
             <Row>
               <div>
                 <img
@@ -58,45 +57,47 @@ const Footer = () => {
               </div>
             </Row>
           </Col>
-          <Col xs={12} sm={6} md={4} lg={3}>
-            <p className="fofont">Suscribe To Our Newsletter</p>
-            <div class="input-group input-group-sm mb-3">
-              <input
-                type="text"
-                className=" folfont form-control border border-end-0 "
-                aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm"
-                placeholder="Your email address"
-              />
-              <span
-                className="input-group-text "
-                id="inputGroup-sizing-sm"
-                style={{ backgroundColor: "white" }}
-              >
-                <i className="bi bi-arrow-right me-3 "> </i>
-              </span>
-            </div>
-
-            <div className="d-flex justify-content-start gap-3 pt-3">
-              <div className=" ">
-                <span className=" p-2 border border-primary rounded-circle">
-                  <i class="bi bi-facebook"></i>
-                </span>
-              </div>
-              <div className="">
-                <span className=" p-2 border border-primary rounded-circle">
-                  <i class="bi bi-linkedin"></i>
-                </span>
-              </div>
-              <div className="">
+          <Col xs={12} sm={12} md={4} lg={3}>
+            <Row>
+              <p className="fofont">Suscribe To Our Newsletter</p>
+              <div class="input-group input-group-sm mb-3">
+                <input
+                  type="text"
+                  className=" folfont form-control border border-end-0 "
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-sm"
+                  placeholder="Your email address"
+                />
                 <span
-                  className="p-2  border border-primary rounded-circle "
-                  style={{ color: "black", backgroundColor: "white" }}
+                  className="input-group-text "
+                  id="inputGroup-sizing-sm"
+                  style={{ backgroundColor: "white" }}
                 >
-                  <i class="  bi bi-instagram"></i>
+                  <i className="bi bi-arrow-right me-3 "> </i>
                 </span>
               </div>
-            </div>
+
+              <div className="d-flex justify-content-start gap-3 pt-3">
+                <div className=" ">
+                  <span className=" p-2 border border-primary rounded-circle">
+                    <i class="bi bi-facebook"></i>
+                  </span>
+                </div>
+                <div className="">
+                  <span className=" p-2 border border-primary rounded-circle">
+                    <i class="bi bi-linkedin"></i>
+                  </span>
+                </div>
+                <div className="">
+                  <span
+                    className="p-2  border border-primary rounded-circle "
+                    style={{ color: "black", backgroundColor: "white" }}
+                  >
+                    <i class="  bi bi-instagram"></i>
+                  </span>
+                </div>
+              </div>
+            </Row>
           </Col>
         </Row>
         <hr />
