@@ -5,10 +5,10 @@ import Secondsection from "./Secondsection";
 
 const Who = () => {
   return (
-    <section className="mt-5 pt-5">
+    <section className="my-5 py-5">
       <Container>
         <Row>
-          <h2 className="text-uppercase">who we are?</h2>
+          <h3 className="text-uppercase">who we are?</h3>
           <Firstsection />
           <Secondsection />
         </Row>

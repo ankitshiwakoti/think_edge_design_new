@@ -30,12 +30,12 @@ const data = [
 
 const Designprocess = () => {
   return (
-    <section>
-      <Container className="mt-4">
+    <section className="my-5">
+      <Container>
+        <h3 className="mt-4 headingdesign text-uppercase">design process</h3>
         <Row>
-          <h2 className="mt-4 headingdesign text-uppercase">design process</h2>
           {data?.map((items, index) => (
-            <Col className="p-0 mt-4" xs={12} sm={12} md={3} lg={3} key={index}>
+            <Col className="p-0 mt-4" xs={12} sm={6} md={6} lg={3} key={index}>
               <div class="designhov card rounded-0 p-0">
                 <div class="card-body">
                   <div
@@ -44,7 +44,7 @@ const Designprocess = () => {
                   >
                     <h2 className="">{items.num}</h2>
                   </div>
-                  <h6 class=" mt-4 p titledesign ">{items.title}</h6>
+                  <h5 class=" mt-4 p  ">{items.title}</h5>
                   <p class="pdesign mt-3 p  ">{items.body}</p>
                 </div>
               </div>

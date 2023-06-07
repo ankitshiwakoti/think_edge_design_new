@@ -2,9 +2,9 @@ import React from "react";
 
 const Header = () => {
   return (
-    <section className="mb-5 pb-3">
+    <section className=" mb-5 pb-3">
       <nav
-        className="navbar navbar-expand-md pt-4 fixed-top"
+        className="scroll-bounce navbar navbar-expand-lg pt-4 fixed-top"
         style={{ backgroundColor: "#FFFFFF" }}
       >
         <div className="container">
