@@ -100,7 +100,7 @@ h5 {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+/* 
 @keyframes bounce {
   0%,
   20%,
@@ -121,7 +121,7 @@ h5 {
 
 .scroll-bounce {
   animation: bounce 2s infinite;
-}
+} */
 
 /* footer */
 
