@@ -248,3 +248,21 @@ h5 {
   color: #fafafa !important;
   transition: all 0.6s ease-in-out !important;
 }
+
+/* offer Section     */
+.offer {
+  cursor: pointer;
+}
+
+.offer:hover {
+  background-color: #212121 !important;
+  color: #fafafa !important;
+  transition: all 0.6s ease-in-out !important;
+  .offerbtn {
+    color: #fafafa !important;
+  }
+}
+.offer:active {
+  background-color: #212121 !important;
+  color: #fafafa !important;
+}

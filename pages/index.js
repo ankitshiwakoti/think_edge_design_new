@@ -6,10 +6,12 @@ import Footer from "@/components/shared/Footer/footer";
 import Who from "@/components/Who";
 import Designprocess from "@/components/Designprocess";
 import Blog from "@/components/Blog";
+import Offer from "@/components/Offer";
 
 export default function Home() {
   return (
     <>
+      <Offer />
       <Who />
       <Designprocess />
       <Blog />
