@@ -33,9 +33,9 @@ const Firstsection = () => {
             to translate their physical and emotional desires into tailored
             interiors.
           </p>
-          <button className="btn border border-black-subtle rounded-0">
+          <button className=" blogbtn whobtn shadow-sm  btn border border-black-subtle rounded-0">
             GET TO KNOW US
-            <span className="p-2 whobtn">
+            <span className="p-2 ">
               {" "}
               <i class="bi bi-arrow-right"></i>
             </span>
