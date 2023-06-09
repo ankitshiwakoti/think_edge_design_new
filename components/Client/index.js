@@ -1,11 +1,13 @@
+import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Image from "next/image";
-import Slider from "react-slick";
+import client from "../../public/assets/client.jpg";
 import who1 from "../../public/assets/who1.jpg";
 import who2 from "../../public/assets/who2.jpg";
 import who3 from "../../public/assets/who3.jpg";
 import who4 from "../../public/assets/whosecond.jpg";
+import Slider from "react-slick";
+import profile from "../../public/assets/profile.png";
 
 const data = [
   {
@@ -61,7 +63,6 @@ function SampleNextArrow(props) {
 
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
-
   return (
     <div
       className={className}
@@ -73,13 +74,13 @@ function SamplePrevArrow(props) {
   );
 }
 
-const Gallary = () => {
+const Client = () => {
   const settings = {
     dots: false,
     infinite: false,
     speed: 500,
     arrow: false,
-    slidesToShow: 4,
+    slidesToShow: 2,
     slidesToScroll: 1,
     initialSlide: 0,
     nextArrow: <SampleNextArrow />,
@@ -117,35 +118,61 @@ const Gallary = () => {
   };
   return (
     <section>
-      <Container>
-        <Row className="my-5">
-          <h4 style={{ fontWeight: "600" }}>GALLERY</h4>
-          <Col xs={12} sm={12} md={12} lg={12}>
-            <div>
-              <Slider {...settings}>
-                {data?.map((items, index) => (
-                  <div
-                    className="card  mainsliders position-relative border-0"
-                    key={index}
-                  >
-                    <Image
-                      src={items.image}
-                      alt="image"
-                      className=" imgslides img-fluid  "
-                    />
-                    <div className="slidercontents my-5 py-2 ms-3 position-absolute top-50 start-0 ">
-                      <h3 className="p-0 m-0">{items.title}</h3>
-                      <p className="p-0 m-0">{items.body}</p>
-                    </div>
-                  </div>
-                ))}
-              </Slider>
+      <Container className="position-relative">
+        <Row className="my-5 ">
+          <Col xs={10} sm={10} md={10} lg={10}>
+            <div className="position-relative" style={{ height: "320px" }}>
+              <Image src={client} alt="image" fill />
             </div>
           </Col>
+          <Col md={2}></Col>
         </Row>
+        <Col
+          xs={12}
+          sm={12}
+          md={5}
+          lg={5}
+          className="position-absolute top-25  "
+          style={{ top: "25%", right: "20%" }}
+        >
+          <div className="" style={{ width: "700px" }}>
+            <Slider {...settings}>
+              {data?.map((items, index) => (
+                <div class="card">
+                  <div class="card-body">
+                    <div className="d-flex gap-2">
+                      <div
+                        className="rounded-4"
+                        style={{ borderRadius: "50%" }}
+                      >
+                        <Image
+                          src={profile}
+                          alt="image"
+                          className="img-fluid"
+                          width={60}
+                        />
+                      </div>
+                      <div>
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">
+                          Card subtitle
+                        </h6>
+                      </div>
+                    </div>
+
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </Col>
       </Container>
     </section>
   );
 };
 
-export default Gallary;
+export default Client;

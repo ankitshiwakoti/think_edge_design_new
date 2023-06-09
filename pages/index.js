@@ -8,6 +8,7 @@ import Designprocess from "@/components/Designprocess";
 import Blog from "@/components/Blog";
 import Offer from "@/components/Offer";
 import Gallary from "@/components/Gallary";
+import Client from "@/components/Client";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Who />
       <Designprocess />
       <Blog />
+      {/* <Client /> */}
       <Gallary />
     </>
   );

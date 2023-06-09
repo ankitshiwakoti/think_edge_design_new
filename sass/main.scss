@@ -26,3 +26,21 @@ $custom-theme-colors: (
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 @import '../node_modules/bootstrap/scss/bootstrap';
 
+
+.mainsliders{
+  opacity:0.6;
+}
+.mainsliders:hover {
+  opacity: 1;
+
+  .imgslides {
+    opacity: 1 !important;
+    background-color: rgba(0, 0, 0,1) !important;
+
+  }
+  .slidercontents {
+    opacity: 0.9 !important;
+    color: white !important;
+    transition: all 0.3s ease-in-out !important;
+  }
+}
