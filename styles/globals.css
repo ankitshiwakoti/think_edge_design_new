@@ -266,3 +266,45 @@ h5 {
   background-color: #212121 !important;
   color: #fafafa !important;
 }
+
+/* galary slider */
+
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  background: #ffffff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 50%;
+}
+.slick-arrow.slick-prev {
+  margin-left: 10px;
+}
+
+.slick-arrow.slick-next {
+  margin-right: 10px;
+}
+.slick-prev::before,
+.slick-next::before {
+  display: none;
+}
+.slick-slide {
+  padding: 10px;
+}
+.slick-arrow:hover {
+  background-color: white !important;
+}
+
+.slidercontent {
+  opacity: 0;
+}
+.mainslider:hover {
+  background: rgba(0, 0, 0, 0.1);
+  .slidercontent {
+    opacity: 0.9 !important;
+    color: white !important;
+  }
+}

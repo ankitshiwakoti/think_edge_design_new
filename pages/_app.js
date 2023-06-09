@@ -1,6 +1,8 @@
 import "@/styles/globals.css";
 import Head from "next/head";
 import "../sass/main.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Footer from "@/components/shared/Footer/footer";
 import Navbar from "@/components/shared/Header";
