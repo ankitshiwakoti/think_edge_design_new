@@ -3,9 +3,9 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const Contact = () => {
   return (
-    <section className="bg-primary ">
+    <section className="bg-light ">
       <Container>
-        <Row style={{ color: "white" }}>
+        <Row style={{ color: "black" }}>
           <h2>Contact Us</h2>
           <Col xs={12} sm={12} md={6} lg={6}>
             <div>

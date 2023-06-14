@@ -23,7 +23,7 @@ export default function Home() {
       <Designprocess />
       <Blog />
       <Client />
-      {/* <Contact /> */}
+      <Contact />
       <Gallary />
     </>
   );
