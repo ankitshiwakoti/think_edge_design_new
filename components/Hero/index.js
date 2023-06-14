@@ -81,9 +81,19 @@ const Hero = () => {
     speed: 2000,
     autoplaySpeed: 4000,
     cssEase: "linear",
-
     slidesToShow: 1,
     slidesToScroll: 1,
+    appendDots: (dots) => (
+      <div
+        style={{
+          backgroundColor: "#ddd",
+          borderRadius: "10px",
+          padding: "10px",
+        }}
+      >
+        <ul style={{ margin: "0px" }}> {dots} </ul>
+      </div>
+    ),
 
     // nextArrow: <SampleNextArrow />,
     // prevArrow: <SamplePrevArrow />,
@@ -134,7 +144,7 @@ const Hero = () => {
                       <Image
                         src={items.img}
                         alt="image"
-                        style={{ width: "100%", height: "500px" }}
+                        style={{ width: "100%", height: "600px" }}
                       />
                     </div>
                     <div
@@ -181,7 +191,7 @@ const Hero = () => {
                       style={{
                         color: "white",
 
-                        top: "30%",
+                        top: "38%",
                         left: "0%",
                       }}
                     >

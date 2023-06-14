@@ -48,6 +48,18 @@ h5 {
   font-size: var(--step-4) !important;
 }
 
+.df-bottombar-branding {
+  display: none;
+}
+
+.modal-logo__inner-bg {
+  display: none;
+}
+.chat-typing__inner {
+  display: none;
+  color: red;
+}
+
 .navhov {
   font-family: Roboto Slab;
 
@@ -310,3 +322,17 @@ h5 {
   border-left: 6px solid green;
   height: 60px;
 }
+
+/* .slick-dots {
+  position: absolute;
+  background-color: red;
+  top: 30%;
+  left: 3%;
+  bottom: -25px;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+} */
