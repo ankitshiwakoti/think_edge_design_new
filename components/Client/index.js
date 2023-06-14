@@ -12,39 +12,45 @@ import profile from "../../public/assets/profile.png";
 const data = [
   {
     id: 1,
-    title: "Cultural Center",
-    body: "Hotel & Resort",
-    image: who1,
+    title: "Mary Goldie",
+    subtitle: "Envato Customer",
+    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit.",
+    image: profile,
   },
   {
     id: 2,
-    title: "Cultural Center",
-    body: "You & Who ",
-    image: who2,
+    title: "Mary Goldie",
+    subtitle: "Envato Customer",
+    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit.",
+    image: profile,
   },
   {
     id: 3,
-    title: "Cultural Center",
-    body: "You & Me",
-    image: who3,
+    title: "Mary Goldie",
+    subtitle: "Envato Customer",
+    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit.",
+    image: profile,
   },
   {
     id: 4,
-    title: "Cultural Center",
-    body: "Dark & mOOn",
-    image: who4,
+    title: "Mary Goldie",
+    subtitle: "Envato Customer",
+    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit.",
+    image: profile,
   },
   {
     id: 5,
-    title: "Cultural Center",
-    body: "Hotel & Resort",
-    image: who1,
+    title: "Mary Goldie",
+    subtitle: "Envato Customer",
+    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit.",
+    image: profile,
   },
   {
     id: 6,
-    title: "Cultural Center",
-    body: "Hotel & Resort",
-    image: who2,
+    title: "Mary Goldie",
+    subtitle: "Envato Customer",
+    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit.",
+    image: profile,
   },
 ];
 
@@ -80,7 +86,7 @@ const Client = () => {
     infinite: false,
     speed: 500,
     arrow: false,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
     nextArrow: <SampleNextArrow />,
@@ -89,7 +95,7 @@ const Client = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: false,
           dots: false,
@@ -99,7 +105,7 @@ const Client = () => {
         breakpoint: 600,
         settings: {
           initialSlide: 2,
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: false,
           dots: false,
@@ -128,17 +134,17 @@ const Client = () => {
           <Col md={2}></Col>
         </Row>
         <Col
-          xs={12}
-          sm={12}
+          xs={8}
+          sm={8}
           md={5}
           lg={5}
-          className="position-absolute top-25  "
-          style={{ top: "25%", right: "20%" }}
+          className=" position-absolute top-25  "
+          style={{ top: "18%", right: "0%" }}
         >
-          <div className="" style={{ width: "700px" }}>
+          <div className="">
             <Slider {...settings}>
               {data?.map((items, index) => (
-                <div class="card">
+                <div class="card rounded-0 p-3">
                   <div class="card-body">
                     <div className="d-flex gap-2">
                       <div
@@ -146,24 +152,21 @@ const Client = () => {
                         style={{ borderRadius: "50%" }}
                       >
                         <Image
-                          src={profile}
+                          src={items.image}
                           alt="image"
                           className="img-fluid"
-                          width={60}
+                          width={50}
                         />
                       </div>
-                      <div>
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">
-                          Card subtitle
-                        </h6>
+                      <div className="ms-1 mb-1">
+                        <h5 class="card-title">{items.title}</h5>
+                        <p class="card-subtitle mb-2 text-body-secondary">
+                          {items.subtitle}
+                        </p>
                       </div>
                     </div>
 
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
+                    <p class="card-text">{items.body}</p>
                   </div>
                 </div>
               ))}

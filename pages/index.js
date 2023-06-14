@@ -9,15 +9,21 @@ import Blog from "@/components/Blog";
 import Offer from "@/components/Offer";
 import Gallary from "@/components/Gallary";
 import Client from "@/components/Client";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
     <>
+      <Hero />
       <Offer />
+      <Projects />
       <Who />
       <Designprocess />
       <Blog />
-      {/* <Client /> */}
+      <Client />
+      {/* <Contact /> */}
       <Gallary />
     </>
   );

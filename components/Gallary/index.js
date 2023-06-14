@@ -125,7 +125,7 @@ const Gallary = () => {
               <Slider {...settings}>
                 {data?.map((items, index) => (
                   <div
-                    className="card  mainsliders position-relative border-0"
+                    className="card p-2 mainsliders position-relative border-0"
                     key={index}
                   >
                     <Image

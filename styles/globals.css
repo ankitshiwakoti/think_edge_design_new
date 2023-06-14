@@ -25,7 +25,7 @@
 
 body {
   background-color: #fafafa !important;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 body::before {
   height: 100%;
@@ -280,18 +280,18 @@ h5 {
   border-radius: 50%;
 }
 .slick-arrow.slick-prev {
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 .slick-arrow.slick-next {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 .slick-prev::before,
 .slick-next::before {
   display: none;
 }
 .slick-slide {
-  padding: 10px;
+  padding: 0px;
 }
 .slick-arrow:hover {
   background-color: white !important;
@@ -304,3 +304,9 @@ h5 {
 .clientslider {
 }
 /* ATBBV3kYzXTE8NCdvS8GNPXbCHcgE2B467E0 */
+
+/* hero section */
+.vl {
+  border-left: 6px solid green;
+  height: 60px;
+}
