@@ -12,6 +12,7 @@ import Client from "@/components/Client";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
+import Form from "@/components/Form";
 
 export default function Home() {
   return (
@@ -23,8 +24,8 @@ export default function Home() {
       <Designprocess />
       <Blog />
       <Client />
-      <Contact />
       <Gallary />
+      <Contact />
     </>
   );
 }

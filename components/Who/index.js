@@ -7,8 +7,8 @@ const Who = () => {
   return (
     <section className="my-5 py-5">
       <Container>
-        <Row>
-          <h3 className="text-uppercase">who we are?</h3>
+        <Row className="who">
+          <h2 className=" fw-medium text-uppercase">who we are?</h2>
           <Firstsection />
           <Secondsection />
         </Row>

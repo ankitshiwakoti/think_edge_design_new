@@ -35,12 +35,12 @@ export default function App({ Component, pageProps }) {
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"
       ></script>
-      <script
+      {/* <script
         type="text/javascript"
         src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
         id="aisensy-wa-widget"
         widget-id="lfmwau"
-      ></script>
+      ></script> */}
 
       <Head>
         {/* <link rel="preconnect" href="https://fonts.googleapis.com" />

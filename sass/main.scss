@@ -27,20 +27,60 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 
+//custom variables
+$accordion-bg: #ffffff;
+$accordion-color: black;
+$accordion-button-color: $primary;
+$accordion-button-active-bg: #ffffff;
+$accordion-button-active-color: $primary;
+$accordion-border-color: #E6E6E6;
+$accordion-inner-border-color:red;
+// $accordion-button-bg: white;
+.faqAccordion {
+  --#{$prefix}accordion-color: #{$accordion-color};
+  --#{$prefix}accordion-bg: #{$accordion-bg};
+  --#{$prefix}accordion-transition: #{$accordion-transition};
+  --#{$prefix}accordion-border-color: #{$accordion-border-color};
+  --#{$prefix}accordion-border-width: #{$accordion-border-width};
+  --#{$prefix}accordion-btn-padding-x: #{$accordion-button-padding-x};
+  --#{$prefix}accordion-btn-padding-y: #{$accordion-button-padding-y};
+  --#{$prefix}accordion-btn-color: #{$accordion-button-color};
+  --#{$prefix}accordion-inner-btn-border-color: #{$accordion-inner-border-color};
+  --#{$prefix}accordion-btn-bg: #{$accordion-button-bg};
+  --#{$prefix}accordion-btn-icon: #{url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>')};
+  --#{$prefix}accordion-btn-icon-width: #{$accordion-icon-width};
+  --#{$prefix}accordion-btn-icon-transform: #{$accordion-icon-transform};
+  --#{$prefix}accordion-btn-icon-transition: #{$accordion-icon-transition};
+  --#{$prefix}accordion-btn-active-icon:  #{url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"> <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/> </svg>')};
+  --#{$prefix}accordion-body-padding-x: #{$accordion-body-padding-x};
+  --#{$prefix}accordion-body-padding-y: #{$accordion-body-padding-y};
+  --#{$prefix}accordion-active-color: #{$accordion-button-active-color};
+  --#{$prefix}accordion-active-bg: #{$accordion-button-active-bg};
+}
+
+
+
+
+
+
+
+
 .mainsliders{
-  opacity:0.6;
+opacity:0.8;
 }
 .mainsliders:hover {
   opacity: 1;
-
+  
   .imgslides {
     opacity: 1 !important;
-    background-color: rgba(0, 0, 0,1) !important;
+  
+
 
   }
   .slidercontents {
-    opacity: 0.9 !important;
+    opacity: 1 !important;
     color: white !important;
+   
     transition: all 0.3s ease-in-out !important;
   }
 }

@@ -32,7 +32,7 @@ const Designprocess = () => {
   return (
     <section className="my-5">
       <Container>
-        <h3 className="mt-4 headingdesign text-uppercase">design process</h3>
+        <h2 className="mt-4 fw-normal text-uppercase">design process</h2>
         <Row>
           {data?.map((items, index) => (
             <Col className="p-0 mt-4" xs={12} sm={6} md={6} lg={3} key={index}>
@@ -44,8 +44,8 @@ const Designprocess = () => {
                   >
                     <h2 className="">{items.num}</h2>
                   </div>
-                  <h5 class=" mt-4 p  ">{items.title}</h5>
-                  <p class="pdesign mt-3 p  ">{items.body}</p>
+                  <h3 class=" mt-4 p  ">{items.title}</h3>
+                  <p class=" mt-3 p  ">{items.body}</p>
                 </div>
               </div>
             </Col>

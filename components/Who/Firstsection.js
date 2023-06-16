@@ -1,9 +1,9 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import Image from "next/image";
-import who1 from "../../public/assets/who1.jpg";
-import who2 from "../../public/assets/who2.jpg";
-import who3 from "../../public/assets/who3.jpg";
+import who1 from "../../public/assets/whofirst1.png";
+import who2 from "../../public/assets/whofirst2.png";
+import who3 from "../../public/assets/whofirst3.png";
 
 const data = [
   {
@@ -23,9 +23,9 @@ const data = [
 const Firstsection = () => {
   return (
     <Col xs={12} sm={12} md={6} lg={6}>
-      <Row className="mt-3">
+      <Row className="mt-3 who">
         <div>
-          <p className="whop">
+          <p className="whoe">
             Our exceptional multinational team offers reliable quality services
             both nationally and internationally. Nature, architecture, design,
             beauty itself and contemporary art inspires us. And yet, what

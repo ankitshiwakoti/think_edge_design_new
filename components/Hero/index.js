@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Slider from "react-slick";
-import hero1 from "../../public/assets/hero1.jpg";
+import hero1 from "../../public/assets/hero1.png";
 import hero2 from "../../public/assets/hero2.jpg";
 import hero3 from "../../public/assets/hero3.png";
 import client from "../../public/assets/client.jpg";
@@ -19,7 +19,7 @@ const data = [
   },
   {
     id: 3,
-    img: hero1,
+    img: hero3,
   },
   {
     id: 4,
@@ -144,7 +144,7 @@ const Hero = () => {
                       <Image
                         src={items.img}
                         alt="image"
-                        style={{ width: "100%", height: "600px" }}
+                        style={{ width: "100%", height: "580px" }}
                       />
                     </div>
                     <div
@@ -152,7 +152,7 @@ const Hero = () => {
                       style={{
                         color: "white",
 
-                        top: "20%",
+                        top: "18%",
                         right: "28%",
                       }}
                     >
@@ -191,33 +191,36 @@ const Hero = () => {
                       style={{
                         color: "white",
 
-                        top: "38%",
+                        top: "25%",
                         left: "0%",
                       }}
                     >
-                      {FooterData?.map((v, k) => (
-                        <div
-                          key={k}
-                          className="d-flex border mt-2 p-2 align-items-center justify-content-center"
-                          style={{
-                            borderRadius: "50%",
-                            width: "35px",
-                            height: "35px",
-                            borderColor: "white",
-                            color: "white",
-                          }}
-                        >
-                          <Link
-                            className="p-4"
-                            onClick={() => setProgress(100)}
-                            href={v.link}
-                            target="_blank"
-                            style={{ color: "white", fontSize: "16px" }}
+                      <div className="ms-3 vl"></div>
+                      <div>
+                        {FooterData?.map((v, k) => (
+                          <div
+                            key={k}
+                            className="d-flex border mt-2 p-2 border border-2 align-items-center justify-content-center"
+                            style={{
+                              borderRadius: "50%",
+                              width: "35px",
+                              height: "35px",
+                              borderColor: "#FFFEFE",
+                            }}
                           >
-                            <i className={v.icon} />
-                          </Link>
-                        </div>
-                      ))}
+                            <Link
+                              className="p-4"
+                              onClick={() => setProgress(100)}
+                              href={v.link}
+                              target="_blank"
+                              style={{ color: "white", fontSize: "14px" }}
+                            >
+                              <i className={v.icon} />
+                            </Link>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="mt-2 ms-3 vl"></div>
                     </div>
                   </div>
                 ))}

@@ -8,6 +8,7 @@ import who3 from "../../public/assets/who3.jpg";
 import who4 from "../../public/assets/whosecond.jpg";
 import Slider from "react-slick";
 import profile from "../../public/assets/profile.png";
+import client1 from "../../public/assets/test.png";
 
 const data = [
   {
@@ -127,8 +128,8 @@ const Client = () => {
       <Container className="position-relative">
         <Row className="my-5 ">
           <Col xs={10} sm={10} md={10} lg={10}>
-            <div className="position-relative" style={{ height: "320px" }}>
-              <Image src={client} alt="image" fill />
+            <div className="position-relative">
+              <Image src={client1} alt="image" className="img-fluid" />
             </div>
           </Col>
           <Col md={2}></Col>
@@ -165,7 +166,6 @@ const Client = () => {
                         </p>
                       </div>
                     </div>
-
                     <p class="card-text">{items.body}</p>
                   </div>
                 </div>

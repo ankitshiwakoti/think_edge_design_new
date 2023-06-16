@@ -2,49 +2,50 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
 import Slider from "react-slick";
-import who1 from "../../public/assets/who1.jpg";
-import who2 from "../../public/assets/who2.jpg";
-import who3 from "../../public/assets/who3.jpg";
-import who4 from "../../public/assets/whosecond.jpg";
+import image1 from "../../public/assets/gallery/g1.png";
+import image2 from "../../public/assets/gallery/g2.png";
+import image3 from "../../public/assets/gallery/gd1.png";
+import image4 from "../../public/assets/gallery/gd2.png";
+import image5 from "../../public/assets/gallery/gd3.png";
 
-const data = [
-  {
-    id: 1,
-    title: "Cultural Center",
-    body: "Hotel & Resort",
-    image: who1,
-  },
-  {
-    id: 2,
-    title: "Cultural Center",
-    body: "You & Who ",
-    image: who2,
-  },
-  {
-    id: 3,
-    title: "Cultural Center",
-    body: "You & Me",
-    image: who3,
-  },
-  {
-    id: 4,
-    title: "Cultural Center",
-    body: "Dark & mOOn",
-    image: who4,
-  },
-  {
-    id: 5,
-    title: "Cultural Center",
-    body: "Hotel & Resort",
-    image: who1,
-  },
-  {
-    id: 6,
-    title: "Cultural Center",
-    body: "Hotel & Resort",
-    image: who2,
-  },
-];
+// const data = [
+//   {
+//     id: 1,
+//     title: "Cultural Center",
+//     body: "Hotel & Resort",
+//     image: who1,
+//   },
+//   {
+//     id: 2,
+//     title: "Cultural Center",
+//     body: "You & Who ",
+//     image: who2,
+//   },
+//   {
+//     id: 3,
+//     title: "Cultural Center",
+//     body: "You & Me",
+//     image: who3,
+//   },
+//   {
+//     id: 4,
+//     title: "Cultural Center",
+//     body: "Dark & mOOn",
+//     image: who4,
+//   },
+//   {
+//     id: 5,
+//     title: "Cultural Center",
+//     body: "Hotel & Resort",
+//     image: who1,
+//   },
+//   {
+//     id: 6,
+//     title: "Cultural Center",
+//     body: "Hotel & Resort",
+//     image: who2,
+//   },
+// ];
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -119,10 +120,19 @@ const Gallary = () => {
     <section>
       <Container>
         <Row className="my-5">
-          <h4 style={{ fontWeight: "600" }}>GALLERY</h4>
-          <Col xs={12} sm={12} md={12} lg={12}>
-            <div>
-              <Slider {...settings}>
+          <h2 className="fw-normal">GALLERY</h2>
+          <Row className="mt-4">
+            <Col xs={12} sm={12} md={7} lg={7}>
+              <div className="  mainsliders position-relative">
+                <Image src={image1} alt="image" className="img-fluid" />
+                <div
+                  className="slidercontents text-center my-5 py-2 ms-3 position-absolute  "
+                  style={{ top: "30%", left: "20%" }}
+                >
+                  <h3 className="p-0 m-0">Modern Contaporary house</h3>
+                  <p className="p-0 m-0">Residental</p>
+                </div>
+                {/* <Slider {...settings}>
                 {data?.map((items, index) => (
                   <div
                     className="card p-2 mainsliders position-relative border-0"
@@ -139,9 +149,62 @@ const Gallary = () => {
                     </div>
                   </div>
                 ))}
-              </Slider>
-            </div>
-          </Col>
+              </Slider> */}
+              </div>
+            </Col>
+            <Col xs={12} sm={12} md={5} lg={5}>
+              <div className="  mainsliders position-relative">
+                <Image src={image2} alt="image" className="img-fluid" />
+
+                <div
+                  className="slidercontents text-center my-5 py-2 ms-3 position-absolute  "
+                  style={{ top: "30%", left: "10%" }}
+                >
+                  <h3 className="p-0 m-0">Modern Contaporary house</h3>
+                  <p className="p-0 m-0">Residental</p>
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <Row className="mt-4">
+            <Col xs={6} sm={6} md={4} lg={4}>
+              <div className="  mainsliders position-relative">
+                <Image src={image3} alt="image" className="img-fluid" />
+
+                <div
+                  className="slidercontents text-center my-5 py-2 ms-3 position-absolute  "
+                  style={{ top: "30%", left: "5%" }}
+                >
+                  <h3 className="p-0 m-0">Modern Contaporary house</h3>
+                  <p className="p-0 m-0">Residental</p>
+                </div>
+              </div>
+            </Col>
+            <Col xs={6} sm={6} md={4} lg={4}>
+              <div className="  mainsliders position-relative">
+                <Image src={image4} alt="image" className="img-fluid" />
+                <div
+                  className="slidercontents text-center my-5 py-2 ms-3 position-absolute  "
+                  style={{ top: "30%", left: "5%" }}
+                >
+                  <h3 className="p-0 m-0">Modern Contaporary house</h3>
+                  <p className="p-0 m-0">Residental</p>
+                </div>
+              </div>
+            </Col>
+            <Col xs={6} sm={6} md={4} lg={4}>
+              <div className="  mainsliders position-relative">
+                <Image src={image5} alt="image" className="img-fluid" />
+                <div
+                  className="slidercontents text-center my-5 py-2 ms-3 position-absolute  "
+                  style={{ top: "30%", left: "5%" }}
+                >
+                  <h3 className="p-0 m-0">Modern Contaporary house</h3>
+                  <p className="p-0 m-0">Residental</p>
+                </div>
+              </div>
+            </Col>
+          </Row>
         </Row>
       </Container>
     </section>
