@@ -7,50 +7,50 @@ import who2 from "../../public/assets/who2.jpg";
 import who3 from "../../public/assets/who3.jpg";
 import who4 from "../../public/assets/whosecond.jpg";
 import Slider from "react-slick";
-import profile from "../../public/assets/profile.png";
-import client1 from "../../public/assets/test.png";
+import profile from "../../public/assets/client/profile.png";
+import client1 from "../../public/assets/client/second.png";
 
 const data = [
   {
     id: 1,
     title: "Mary Goldie",
     subtitle: "Envato Customer",
-    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit.",
+    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit. I am in love your entire work. kudos to all the team member and enhancing and making my home to the new home.",
     image: profile,
   },
   {
     id: 2,
     title: "Mary Goldie",
     subtitle: "Envato Customer",
-    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit.",
+    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit. I am in love your entire work. kudos to all the team member and enhancing and making my home to the new home.",
     image: profile,
   },
   {
     id: 3,
     title: "Mary Goldie",
     subtitle: "Envato Customer",
-    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit.",
+    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit. I am in love your entire work. kudos to all the team member and enhancing and making my home to the new home.",
     image: profile,
   },
   {
     id: 4,
     title: "Mary Goldie",
     subtitle: "Envato Customer",
-    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit.",
+    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit. I am in love your entire work. kudos to all the team member and enhancing and making my home to the new home.",
     image: profile,
   },
   {
     id: 5,
     title: "Mary Goldie",
     subtitle: "Envato Customer",
-    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit.",
+    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit. I am in love your entire work. kudos to all the team member and enhancing and making my home to the new home.",
     image: profile,
   },
   {
     id: 6,
     title: "Mary Goldie",
     subtitle: "Envato Customer",
-    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit.",
+    body: "I love their design for all stunning details. you must know what can you do for a project before taking it, but with Architus, the sky is the limit. I am in love your entire work. kudos to all the team member and enhancing and making my home to the new home.",
     image: profile,
   },
 ];
@@ -90,8 +90,8 @@ const Client = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    // nextArrow: <SampleNextArrow />,
+    // prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -125,54 +125,69 @@ const Client = () => {
   };
   return (
     <section>
-      <Container className="position-relative">
-        <Row className="my-5 ">
-          <Col xs={10} sm={10} md={10} lg={10}>
+      <Container className=" p-0">
+        <div className=" mt-5 position">
+          <h2>WHAT OUR CLIENT SAY</h2>
+        </div>
+        <Row className="my-5 position-relative ">
+          <Col
+            xs={8}
+            sm={8}
+            md={8}
+            lg={8}
+            className=" position-absolute top-25 mb-5 p-0  "
+            style={{
+              top: "5%",
+              left: "0%",
+              zIndex: "1",
+            }}
+          >
+            <div className="">
+              <Slider {...settings}>
+                {data?.map((items, index) => (
+                  <div class="card rounded-0">
+                    <div
+                      class="card-body p-4 "
+                      style={{ backgroundColor: "#F2F1EB" }}
+                    >
+                      <div className="d-flex gap-2">
+                        <div
+                          className="rounded-4 mt-3"
+                          style={{
+                            borderRadius: "50%",
+                          }}
+                        >
+                          <Image
+                            src={items.image}
+                            alt="image"
+                            className="img-fluid"
+                          />
+                        </div>
+                        <div className=" mt-1 p-4  ps-0 ">
+                          <p class=" fw-semibold mb-1 card-title">
+                            {items.title}
+                          </p>
+                          <p class=" mb-2  fw-normal text-body-secondary">
+                            {items.subtitle}
+                          </p>
+                        </div>
+                      </div>
+                      <p class="fw-light text-body-secondary mb-5">
+                        {items.body}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </Slider>
+            </div>
+          </Col>
+          <Col md={7} className="p-0"></Col>
+          <Col xs={10} sm={10} md={5} lg={5}>
             <div className="position-relative">
               <Image src={client1} alt="image" className="img-fluid" />
             </div>
           </Col>
-          <Col md={2}></Col>
         </Row>
-        <Col
-          xs={8}
-          sm={8}
-          md={5}
-          lg={5}
-          className=" position-absolute top-25  "
-          style={{ top: "18%", right: "0%" }}
-        >
-          <div className="">
-            <Slider {...settings}>
-              {data?.map((items, index) => (
-                <div class="card rounded-0 p-3">
-                  <div class="card-body">
-                    <div className="d-flex gap-2">
-                      <div
-                        className="rounded-4"
-                        style={{ borderRadius: "50%" }}
-                      >
-                        <Image
-                          src={items.image}
-                          alt="image"
-                          className="img-fluid"
-                          width={50}
-                        />
-                      </div>
-                      <div className="ms-1 mb-1">
-                        <h5 class="card-title">{items.title}</h5>
-                        <p class="card-subtitle mb-2 text-body-secondary">
-                          {items.subtitle}
-                        </p>
-                      </div>
-                    </div>
-                    <p class="card-text">{items.body}</p>
-                  </div>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </Col>
       </Container>
     </section>
   );

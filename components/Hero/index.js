@@ -169,7 +169,7 @@ const Hero = () => {
                         Give your dreams a shape
                       </h1>
                       <h1
-                        className=" mb-0 text-uppercase"
+                        className=" mb-4 text-uppercase"
                         style={{ lineHeight: "53.2px", fontWeight: "500" }}
                       >
                         of reality

@@ -30,14 +30,14 @@ const data = [
 
 const Designprocess = () => {
   return (
-    <section className="my-5">
+    <section className="my-5 design">
       <Container className="p-0">
         <h2 className="mt-4 fw-normal text-uppercase">design process</h2>
         <Row>
           {data?.map((items, index) => (
             <Col className="p-0 mt-4" xs={12} sm={6} md={6} lg={3} key={index}>
-              <div class="designhov shadow card rounded-0 p-0">
-                <div class="card-body">
+              <div class="designhov  card rounded-0 p-0">
+                <div class="card-body testcolor">
                   <div
                     className="hovsmall bg-primary mt-3 p-3 d-flex justify-content-center align-items-center"
                     style={{ width: "100px", color: "white" }}

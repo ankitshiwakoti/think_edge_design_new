@@ -27,7 +27,9 @@
 
 body {
   overflow-x: hidden;
-  background-color: #fafafa !important;
+  background-color: #fffefe !important;
+  height: 100vh;
+  width: 100%;
   /* overflow-x: hidden; */
 }
 body::before {
@@ -75,8 +77,8 @@ p {
 
 .navhov:hover {
   border-bottom: solid 1px;
-  border-color: #000000;
-  color: #212121 !important;
+  border-color: #a18565;
+  color: #a18565 !important;
   /* transition: all 1s ease-in !important; */
 }
 
@@ -91,7 +93,8 @@ p {
   line-height: 19px;
 }
 .nabbtnhov:hover {
-  background-color: #585757 !important;
+  background-color: #a18565 !important;
+  color: #fffefe !important;
   transition: all 0.8s ease-in-out !important;
 }
 
@@ -227,10 +230,20 @@ p {
 
   color: #525252;
 }
+.designhov {
+  background-color: #fafafa !important;
+}
+.design .card-body {
+  background-color: #ffffff !important;
+}
 
 .designhov:hover {
   transition: all 0.6s ease-in-out !important;
   background-color: #212121 !important;
+  .card-body {
+    background-color: #212121 !important;
+    transition: all 0.9s ease-in-out !important;
+  }
   .p {
     color: #fafafa !important;
     transition: all 0.9s ease-in-out !important;
@@ -244,11 +257,11 @@ p {
 
 /* blog */
 
-.blogtitle {
+/* .blogtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
-}
+} */
 
 .blogtext {
   overflow: hidden;
@@ -320,7 +333,7 @@ p {
 
 .slick-arrow.slick-prev,
 .slick-arrow.slick-next {
-  background: #212121;
+  background: transparent;
   width: 80px;
   height: 40px;
   display: flex;
@@ -346,7 +359,7 @@ p {
   padding: 0px;
 }
 .slick-arrow:hover {
-  background-color: rgb(28, 27, 27) !important;
+  /* background-color: rgb(28, 27, 27) !important; */
 }
 
 .slidercontents {
@@ -359,7 +372,7 @@ p {
 
 /* hero section */
 .vl {
-  border-left: 1px solid #fafafa;
+  border-left: solid #fafafa;
   border-width: thin;
   height: 100px;
 }
@@ -389,7 +402,7 @@ p {
 } */
 
 .slick-dots {
-  font-size: 10px !important;
+  font-size: 80px !important;
   position: absolute !important;
   color: #cb1010;
   display: grid;
@@ -417,7 +430,7 @@ dl {
   justify-content: center !important;
   width: 30px !important;
   height: 30px !important;
-  margin: 0 5px;
+
   padding: 5px !important;
   cursor: pointer;
   /* border: 1px solid;
@@ -425,19 +438,21 @@ dl {
   margin-top: 5px !important;
 }
 .slick-dots li:active {
-  border: 1px solid;
+  border: 5px solid !important;
+  border-width: thick !important;
   border-radius: 50%;
 }
 
 .slick-dots li button::before {
-  font-size: 8px !important;
-  line-height: 0;
+  font-size: 6px !important;
+  line-height: 10px;
   display: flex !important;
-  align-items: center;
-  justify-content: center;
+  align-items: center !important;
+  justify-content: center !important;
   width: 8px !important;
   height: 8px !important;
-  padding: 10px !important;
+  padding: 8px !important;
+  padding-bottom: 8px !important;
   cursor: pointer;
   color: white !important;
   border: 0;
@@ -447,7 +462,8 @@ dl {
   color: white !important;
 }
 .slick-dots li.slick-active button:before {
-  border: 2px solid;
+  border: 1px solid;
+  border-width: thin;
   border-radius: 50%;
   opacity: 1 !important;
 }

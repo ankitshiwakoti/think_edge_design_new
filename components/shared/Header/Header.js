@@ -5,7 +5,7 @@ const Header = () => {
     <section className=" mb-5 pb-3">
       <nav
         className="scroll-bounce me-auto navbar navbar-expand-lg p-3 fixed-top"
-        style={{ backgroundColor: "#FFFFFF" }}
+        style={{ backgroundColor: "#FFFEFE" }}
       >
         <div className="container p-0">
           <a className="navbar-brand" href="#">
@@ -150,9 +150,14 @@ const Header = () => {
               </div>
               <form>
                 {" "}
-                <button className=" nabbtnhov  btn border border-1  rounded-0 bg-white">
-                  <span style={{ color: "#212121" }}>CONTACT US</span>
-                </button>
+                <div
+                  className=" p-2 nabbtnhov  btn border border-1  rounded-0 "
+                  style={{ background: "transparent", color: "#212121" }}
+                >
+                  <span className="p-3 " style={{}}>
+                    CONTACT US
+                  </span>
+                </div>
               </form>
             </div>
           </div>

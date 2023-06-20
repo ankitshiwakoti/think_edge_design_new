@@ -85,7 +85,7 @@ function SampleNextArrow(props) {
     <div
       className={className}
       style={{
-        color: "white ",
+        color: "#895d2b",
         fontWeight: "400",
         fontSize: "14px",
       }}
@@ -105,7 +105,7 @@ function SamplePrevArrow(props) {
     <div
       className={className}
       style={{
-        color: "white ",
+        color: "#895d2b ",
         fontWeight: "400",
         fontSize: "14px",
         top: "80%",
@@ -166,10 +166,25 @@ const Projects = () => {
     <section id="projects" className="pt-5 projects">
       <Container className="p-0">
         <Row className="my-5">
-          <h2 className=" fw-medium text-uppercase mb-4">
+          <div className="p-0 justify-content-start col-md-6 col-lg-6 col-sm-6 col-xs-12">
+            <h2 className=" fw-normal text-uppercase">our latest projects </h2>
+          </div>
+
+          <div className="d-flex justify-content-end col-md-6 col-lg-6 col-sm-6 col-xs-12">
+            <button
+              className="blogbtn pe-3 ps-4  border border-1 rounded-0   btn "
+              style={{ background: "transparent" }}
+            >
+              VIEW ALL PROJECTS
+              <span className="p-2 ps-3 ">
+                <i class="bi bi-arrow-right"></i>
+              </span>
+            </button>
+          </div>
+          {/* <h2 className=" fw-medium text-uppercase mb-4">
             our latest projects
-          </h2>
-          <div className="p-0">
+          </h2> */}
+          <div className="pt-5 p-0">
             <Slider {...settings}>
               {data?.map((items, index) => (
                 <div className=" position-relative">
@@ -196,8 +211,8 @@ const Projects = () => {
                     style={{ top: "3%", right: "0%" }}
                   >
                     <div
-                      className="bg-primary p-4 pt-5 mb-5 pb-5"
-                      style={{ color: "white" }}
+                      className=" p-4 pt-5 mb-5 pb-5"
+                      style={{ color: "#212121", backgroundColor: " #F2F1EB" }}
                     >
                       <h3 className="text-uppercase fw-medium">
                         {items.title}{" "}
@@ -207,7 +222,7 @@ const Projects = () => {
                       </h4>
                       <p
                         className="pt-2 fw-regular"
-                        style={{ color: "#ababab" }}
+                        style={{ color: "#525252" }}
                       >
                         {items.body}
                       </p>
@@ -215,26 +230,29 @@ const Projects = () => {
                         <h4 className="text-uppercase fw-light">
                           {items.ftitle}
                         </h4>
-                        <p className="mb-1" style={{ color: "#ababab" }}>
+                        <p className="mb-1" style={{ color: "#525252" }}>
                           1.{items.l1}
                         </p>
-                        <p className="mb-1" style={{ color: "#ababab" }}>
+                        <p className="mb-1" style={{ color: "#525252" }}>
                           2. {items.l2}
                         </p>
-                        <p className="mb-1" style={{ color: "#ababab" }}>
+                        <p className="mb-1" style={{ color: "#525252" }}>
                           3. {items.l3}{" "}
                         </p>
-                        <p className="mb-1" style={{ color: "#ababab" }}>
+                        <p className="mb-1" style={{ color: "#525252" }}>
                           4. {items.l4}{" "}
                         </p>
-                        <p className="mb-1" style={{ color: "#ababab" }}>
+                        <p className="mb-1" style={{ color: "#525252" }}>
                           5. {items.l5}
                         </p>
                       </div>
                       <div className="pb-4" style={{ marginBottom: "60px" }}>
                         <button
-                          className="mt-5 text-center  btn shadow-sm border border-white bg-primary text-white border-opacity-25 text-primary rounded-0"
-                          style={{ color: "white" }}
+                          className="mt-5 text-center  btn  border  border-1 border-primary border-opacity-25  rounded-0"
+                          style={{
+                            color: "#212121",
+                            background: "transparent",
+                          }}
                         >
                           LEARN MORE
                           <span className="p-3 ">

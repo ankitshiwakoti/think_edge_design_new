@@ -50,11 +50,11 @@ const Offer = () => {
   const [active, setActive] = useState(data[0]?.image);
   const [activetitle, setActivetitle] = useState(data[0]?.title);
   return (
-    <section className="mt-5 pt-5">
+    <section className="mt-5 ">
       <Container className="p-0">
-        <h2 className="mb-2">What We Offer</h2>
-        <Row className="mt-4 pt-4">
-          <Col className="p-0" xs={12} sm={6} md={5} lg={5}>
+        <h2 className="">What We Offer</h2>
+        <Row className="mt-4 ">
+          <Col className="p-0" xs={12} sm={6} md={4} lg={4}>
             <Accordion defaultActiveKey="0" bsPrefix="faqAccordion" flush>
               {data?.map((items, index) => (
                 <Accordion.Item
@@ -101,7 +101,7 @@ const Offer = () => {
               </div>
             ))} */}
           </Col>
-          <Col className="pe-0" xs={12} sm={6} md={7} lg={7}>
+          <Col className="pe-0" xs={12} sm={6} md={8} lg={8}>
             <div className="position-relative ">
               <Image src={active} alt="image" className="img-fluid" />
             </div>
