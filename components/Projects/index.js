@@ -3,7 +3,10 @@ import { Col, Container, Row } from "react-bootstrap";
 import who1 from "../../public/assets/who1.jpg";
 import who2 from "../../public/assets/who2.jpg";
 import who3 from "../../public/assets/who3.jpg";
-import project1 from "../../public/assets/project1.png";
+import project1 from "../../public/assets/project/projects1.png";
+import project2 from "../../public/assets/project/projects2.png";
+import project3 from "../../public/assets/project/projects3.png";
+import project4 from "../../public/assets/project/projects4.png";
 import who4 from "../../public/assets/whosecond.jpg";
 import Slider from "react-slick";
 import Image from "next/image";
@@ -24,7 +27,7 @@ const data = [
   },
   {
     id: 2,
-    image: who2,
+    image: project2,
     title: "MODERN CONTEMPORARY HOUSE",
     subtitle: "RESIDENTIAL",
     body: "A house for everyone, breaking previous stereotypes. It comes in two versions, Modern IV ideal for a family of 4 or 6 members.",
@@ -37,7 +40,7 @@ const data = [
   },
   {
     id: 3,
-    image: who3,
+    image: project3,
     title: "MODERN CONTEMPORARY HOUSE",
     subtitle: "RESIDENTIAL",
     body: "A house for everyone, breaking previous stereotypes. It comes in two versions, Modern IV ideal for a family of 4 or 6 members.",
@@ -50,7 +53,7 @@ const data = [
   },
   {
     id: 4,
-    image: who4,
+    image: project4,
     title: "MODERN CONTEMPORARY HOUSE",
     subtitle: "RESIDENTIAL",
     body: "A house for everyone, breaking previous stereotypes. It comes in two versions, Modern IV ideal for a family of 4 or 6 members.",
@@ -63,7 +66,7 @@ const data = [
   },
   {
     id: 5,
-    image: who1,
+    image: project1,
     title: "MODERN CONTEMPORARY HOUSE",
     subtitle: "RESIDENTIAL",
     body: "A house for everyone, breaking previous stereotypes. It comes in two versions, Modern IV ideal for a family of 4 or 6 members.",
@@ -85,8 +88,6 @@ function SampleNextArrow(props) {
         color: "white ",
         fontWeight: "400",
         fontSize: "14px",
-        top: "80%",
-        left: "62%",
       }}
       onClick={onClick}
     >
@@ -108,7 +109,7 @@ function SamplePrevArrow(props) {
         fontWeight: "400",
         fontSize: "14px",
         top: "80%",
-        left: "55%",
+        left: "52%",
       }}
       onClick={onClick}
     >
@@ -162,22 +163,27 @@ const Projects = () => {
     ],
   };
   return (
-    <section id="projects" className="projects">
-      <Container>
+    <section id="projects" className="pt-5 projects">
+      <Container className="p-0">
         <Row className="my-5">
           <h2 className=" fw-medium text-uppercase mb-4">
             our latest projects
           </h2>
-          <div>
+          <div className="p-0">
             <Slider {...settings}>
               {data?.map((items, index) => (
                 <div className=" position-relative">
                   <Col xs={8} sm={8} md={7} lg={7}>
-                    <div className="">
+                    <div
+                      className="position-relative"
+                      style={{ height: "700px", width: "100%" }}
+                    >
                       <Image
                         src={items.image}
                         alt="img"
-                        className="img-fluid"
+                        // height={650}
+                        // style={{ width: "100%" }}
+                        fill
                       />
                     </div>
                   </Col>
@@ -187,7 +193,7 @@ const Projects = () => {
                     md={6}
                     lg={6}
                     className="position-absolute top-25  "
-                    style={{ top: "3%", right: "-2%" }}
+                    style={{ top: "3%", right: "0%" }}
                   >
                     <div
                       className="bg-primary p-4 pt-5 mb-5 pb-5"
@@ -225,7 +231,7 @@ const Projects = () => {
                           5. {items.l5}
                         </p>
                       </div>
-                      <div className="pb-4">
+                      <div className="pb-4" style={{ marginBottom: "60px" }}>
                         <button
                           className="mt-5 text-center  btn shadow-sm border border-white bg-primary text-white border-opacity-25 text-primary rounded-0"
                           style={{ color: "white" }}

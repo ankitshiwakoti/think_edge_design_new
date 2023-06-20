@@ -6,7 +6,7 @@ import Secondsection from "./Secondsection";
 const Who = () => {
   return (
     <section className="my-5 py-5">
-      <Container>
+      <Container className="p-0 ">
         <Row className="who">
           <h2 className=" fw-medium text-uppercase">who we are?</h2>
           <Firstsection />

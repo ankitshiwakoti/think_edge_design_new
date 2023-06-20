@@ -118,19 +118,18 @@ const Gallary = () => {
   };
   return (
     <section>
-      <Container>
+      <Container className="p-0">
         <Row className="my-5">
           <h2 className="fw-normal">GALLERY</h2>
           <Row className="mt-4">
             <Col xs={12} sm={12} md={7} lg={7}>
               <div className="  mainsliders position-relative">
                 <Image src={image1} alt="image" className="img-fluid" />
-                <div
-                  className="slidercontents text-center my-5 py-2 ms-3 position-absolute  "
-                  style={{ top: "30%", left: "20%" }}
-                >
-                  <h3 className="p-0 m-0">Modern Contaporary house</h3>
-                  <p className="p-0 m-0">Residental</p>
+                <div className="slidercontents text-center position-absolute  ">
+                  <div className="content position-relative">
+                    <h3 className="p-0 m-0">Modern Contaporary house</h3>
+                    <p className="p-0 m-0">Residental</p>
+                  </div>
                 </div>
                 {/* <Slider {...settings}>
                 {data?.map((items, index) => (
@@ -156,12 +155,11 @@ const Gallary = () => {
               <div className="  mainsliders position-relative">
                 <Image src={image2} alt="image" className="img-fluid" />
 
-                <div
-                  className="slidercontents text-center my-5 py-2 ms-3 position-absolute  "
-                  style={{ top: "30%", left: "10%" }}
-                >
-                  <h3 className="p-0 m-0">Modern Contaporary house</h3>
-                  <p className="p-0 m-0">Residental</p>
+                <div className="slidercontents text-center  position-absolute  ">
+                  <div className="content position-relative">
+                    <h3 className="p-0 m-0">Modern Contaporary house</h3>
+                    <p className="p-0 m-0">Residental</p>
+                  </div>
                 </div>
               </div>
             </Col>
@@ -171,24 +169,22 @@ const Gallary = () => {
               <div className="  mainsliders position-relative">
                 <Image src={image3} alt="image" className="img-fluid" />
 
-                <div
-                  className="slidercontents text-center my-5 py-2 ms-3 position-absolute  "
-                  style={{ top: "30%", left: "5%" }}
-                >
-                  <h3 className="p-0 m-0">Modern Contaporary house</h3>
-                  <p className="p-0 m-0">Residental</p>
+                <div className="slidercontents text-center  position-absolute  ">
+                  <div className="content position-relative">
+                    <h3 className="p-0 m-0">Modern Contaporary house</h3>
+                    <p className="p-0 m-0">Residental</p>
+                  </div>
                 </div>
               </div>
             </Col>
             <Col xs={6} sm={6} md={4} lg={4}>
               <div className="  mainsliders position-relative">
                 <Image src={image4} alt="image" className="img-fluid" />
-                <div
-                  className="slidercontents text-center my-5 py-2 ms-3 position-absolute  "
-                  style={{ top: "30%", left: "5%" }}
-                >
-                  <h3 className="p-0 m-0">Modern Contaporary house</h3>
-                  <p className="p-0 m-0">Residental</p>
+                <div className="slidercontents text-center  position-absolute  ">
+                  <div className="content position-relative">
+                    <h3 className="p-0 m-0">Modern Contaporary house</h3>
+                    <p className="p-0 m-0">Residental</p>
+                  </div>
                 </div>
               </div>
             </Col>
@@ -196,11 +192,13 @@ const Gallary = () => {
               <div className="  mainsliders position-relative">
                 <Image src={image5} alt="image" className="img-fluid" />
                 <div
-                  className="slidercontents text-center my-5 py-2 ms-3 position-absolute  "
-                  style={{ top: "30%", left: "5%" }}
+                  className="slidercontents text-center  position-absolute  "
+                  // style={{ top: "30%", left: "5%" }}
                 >
-                  <h3 className="p-0 m-0">Modern Contaporary house</h3>
-                  <p className="p-0 m-0">Residental</p>
+                  <div className="content position-absolute ">
+                    <h3 className="">Modern Contaporary house</h3>
+                    <p className="">Residental</p>
+                  </div>
                 </div>
               </div>
             </Col>

@@ -40,7 +40,7 @@ const FooterData = [
   },
   {
     id: 1,
-    icon: "bi bi-linkedin",
+    icon: "bi bi-youtube",
     link: "www.linkedin.com",
   },
 ];
@@ -83,17 +83,17 @@ const Hero = () => {
     cssEase: "linear",
     slidesToShow: 1,
     slidesToScroll: 1,
-    appendDots: (dots) => (
-      <div
-        style={{
-          backgroundColor: "#ddd",
-          borderRadius: "10px",
-          padding: "10px",
-        }}
-      >
-        <ul style={{ margin: "0px" }}> {dots} </ul>
-      </div>
-    ),
+    // appendDots: (dots) => (
+    //   <div
+    //     style={{
+    //       backgroundColor: "red",
+    //       borderRadius: "10px",
+    //       padding: "10px",
+    //     }}
+    //   >
+    //     <ul style={{ margin: "0px" }}> {dots} </ul>
+    //   </div>
+    // ),
 
     // nextArrow: <SampleNextArrow />,
     // prevArrow: <SamplePrevArrow />,
@@ -105,7 +105,7 @@ const Hero = () => {
           arrow: false,
           slidesToScroll: 1,
           infinite: false,
-          dots: false,
+          dots: true,
         },
       },
       {
@@ -116,7 +116,7 @@ const Hero = () => {
           arrow: false,
           slidesToScroll: 1,
           infinite: false,
-          dots: false,
+          dots: true,
         },
       },
       {
@@ -126,7 +126,7 @@ const Hero = () => {
           infinite: false,
           slidesToScroll: 1,
           arrow: false,
-          dots: false,
+          dots: true,
         },
       },
     ],
@@ -144,7 +144,7 @@ const Hero = () => {
                       <Image
                         src={items.img}
                         alt="image"
-                        style={{ width: "100%", height: "580px" }}
+                        style={{ width: "100%", height: "700px" }}
                       />
                     </div>
                     <div
@@ -152,7 +152,7 @@ const Hero = () => {
                       style={{
                         color: "white",
 
-                        top: "18%",
+                        top: "28%",
                         right: "28%",
                       }}
                     >
@@ -175,15 +175,15 @@ const Hero = () => {
                         of reality
                       </h1>
 
-                      <button
-                        className="mt-5 text-center  btn shadow-sm border border-white bg-primary text-white border-opacity-25 text-primary rounded-0"
+                      <div
+                        className="mt-5 text-center herobtn btnhover btn shadow-sm border border-white text-white border-opacity-25 text-primary rounded-0"
                         style={{ color: "white" }}
                       >
-                        LEARN MORE
-                        <span className="p-3 ">
+                        <span className="p-2 "> LEARN MORE</span>
+                        <span className="pe-2 ">
                           <i class="bi bi-arrow-right"></i>
                         </span>
-                      </button>
+                      </div>
                     </div>
 
                     <div
@@ -191,16 +191,16 @@ const Hero = () => {
                       style={{
                         color: "white",
 
-                        top: "25%",
+                        top: "18%",
                         left: "0%",
                       }}
                     >
-                      <div className="ms-3 vl"></div>
+                      <div className="ms-3 mb-1 vl"></div>
                       <div>
                         {FooterData?.map((v, k) => (
                           <div
                             key={k}
-                            className="d-flex border mt-2 p-2 border border-2 align-items-center justify-content-center"
+                            className="d-flex border mt-3 p-2 border border-1 align-items-center justify-content-center"
                             style={{
                               borderRadius: "50%",
                               width: "35px",
@@ -220,7 +220,7 @@ const Hero = () => {
                           </div>
                         ))}
                       </div>
-                      <div className="mt-2 ms-3 vl"></div>
+                      <div className="mt-4 ms-3 vl"></div>
                     </div>
                   </div>
                 ))}

@@ -22,7 +22,7 @@ const data = [
 
 const Firstsection = () => {
   return (
-    <Col xs={12} sm={12} md={6} lg={6}>
+    <Col xs={12} sm={12} md={6} lg={6} className="p-0">
       <Row className="mt-3 who">
         <div>
           <p className="whoe">

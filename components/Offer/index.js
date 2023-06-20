@@ -10,7 +10,7 @@ import wwo1 from "../../public/assets/wwo1.png";
 const data = [
   {
     id: 1,
-    title: "BIM MODELING",
+    title: "BIM Moduling",
     body: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     image: wwo1,
   },
@@ -51,10 +51,10 @@ const Offer = () => {
   const [activetitle, setActivetitle] = useState(data[0]?.title);
   return (
     <section className="mt-5 pt-5">
-      <Container>
-        <Row>
-          <h2 className="mb-4">What We Offer</h2>
-          <Col xs={12} sm={6} md={5} lg={5}>
+      <Container className="p-0">
+        <h2 className="mb-2">What We Offer</h2>
+        <Row className="mt-4 pt-4">
+          <Col className="p-0" xs={12} sm={6} md={5} lg={5}>
             <Accordion defaultActiveKey="0" bsPrefix="faqAccordion" flush>
               {data?.map((items, index) => (
                 <Accordion.Item
@@ -101,9 +101,9 @@ const Offer = () => {
               </div>
             ))} */}
           </Col>
-          <Col xs={12} sm={6} md={7} lg={7}>
-            <div className="position-relative " style={{ height: "476px" }}>
-              <Image src={active} alt="image" className="" fill />
+          <Col className="pe-0" xs={12} sm={6} md={7} lg={7}>
+            <div className="position-relative ">
+              <Image src={active} alt="image" className="img-fluid" />
             </div>
           </Col>
         </Row>

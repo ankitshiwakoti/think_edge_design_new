@@ -31,7 +31,7 @@ const data = [
 const Designprocess = () => {
   return (
     <section className="my-5">
-      <Container>
+      <Container className="p-0">
         <h2 className="mt-4 fw-normal text-uppercase">design process</h2>
         <Row>
           {data?.map((items, index) => (
