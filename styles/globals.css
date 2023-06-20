@@ -360,7 +360,7 @@ p {
 /* hero section */
 .vl {
   border-left: 1px solid #fafafa;
-  border-width: 300;
+  border-width: thin;
   height: 100px;
 }
 
