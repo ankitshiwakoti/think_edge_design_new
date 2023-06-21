@@ -6,43 +6,44 @@ import who2 from "../../public/assets/who2.jpg";
 import who3 from "../../public/assets/who3.jpg";
 import who4 from "../../public/assets/whosecond.jpg";
 import wwo1 from "../../public/assets/wwo1.png";
+import wwo2 from "../../public/assets/wwo2.png";
 
 const data = [
   {
     id: 1,
     title: "BIM Moduling",
-    body: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    body: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: wwo1,
   },
   {
     id: 2,
     title: "AutoCAD Drafting",
-    body: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: who2,
+    body: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    image: wwo2,
   },
   {
     id: 3,
     title: "Interior Design",
-    body: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: who3,
+    body: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    image: wwo1,
   },
   {
     id: 4,
     title: "2D & 3D Modelling",
-    body: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: who4,
+    body: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    image: wwo2,
   },
   {
     id: 5,
     title: "Landscape Conecpt",
-    body: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: who1,
+    body: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: wwo1,
   },
   {
     id: 6,
     title: "Estimation Stratragic Resource planning",
-    body: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: who2,
+    body: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    image: wwo2,
   },
 ];
 
@@ -103,7 +104,12 @@ const Offer = () => {
           </Col>
           <Col className="pe-0" xs={12} sm={6} md={8} lg={8}>
             <div className="position-relative ">
-              <Image src={active} alt="image" className="img-fluid" />
+              <Image
+                src={active}
+                alt="image"
+                className="img-fluid"
+                style={{ height: "422px" }}
+              />
             </div>
           </Col>
         </Row>

@@ -60,10 +60,19 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ color: "black ", fontSize: "30px" }}
+      style={{
+        color: "#895d2b",
+        fontWeight: "400",
+        fontSize: "14px",
+        top: "85%",
+        left: "15%",
+      }}
       onClick={onClick}
     >
-      <i class="bi bi-arrow-right-short"></i>
+      <span> Next</span>
+      <span className="ms-1 ">
+        <i class="bi bi-arrow-right"> </i>
+      </span>
     </div>
   );
 }
@@ -73,10 +82,19 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ color: "black ", fontSize: "30px" }}
+      style={{
+        color: "#895d2b ",
+        fontWeight: "400",
+        fontSize: "14px",
+        top: "85%",
+        left: "5%",
+      }}
       onClick={onClick}
     >
-      <i class="bi bi-arrow-left-short"></i>
+      <span className="me-1 mt-1">
+        <i class="bi bi-arrow-left"> </i>
+      </span>
+      <span> previous</span>
     </div>
   );
 }
@@ -90,8 +108,8 @@ const Client = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -124,7 +142,7 @@ const Client = () => {
     ],
   };
   return (
-    <section>
+    <section className="client">
       <Container className=" p-0">
         <div className=" mt-5 position">
           <h2>WHAT OUR CLIENT SAY</h2>
@@ -135,9 +153,9 @@ const Client = () => {
             sm={8}
             md={8}
             lg={8}
-            className=" position-absolute top-25 mb-5 p-0  "
+            className=" position-absolute top-25 mb-5  "
             style={{
-              top: "5%",
+              top: "10%",
               left: "0%",
               zIndex: "1",
             }}
@@ -145,9 +163,12 @@ const Client = () => {
             <div className="">
               <Slider {...settings}>
                 {data?.map((items, index) => (
-                  <div class="card rounded-0">
+                  <div
+                    class="card rounded-0 "
+                    style={{ backgroundColor: "#F2F1EB" }}
+                  >
                     <div
-                      class="card-body p-4 "
+                      class="card-body p-4  pe-0 "
                       style={{ backgroundColor: "#F2F1EB" }}
                     >
                       <div className="d-flex gap-2">
@@ -172,7 +193,7 @@ const Client = () => {
                           </p>
                         </div>
                       </div>
-                      <p class="fw-light text-body-secondary mb-5">
+                      <p class="fw-light text-body-secondary p-3  mb-5">
                         {items.body}
                       </p>
                     </div>
@@ -184,7 +205,12 @@ const Client = () => {
           <Col md={7} className="p-0"></Col>
           <Col xs={10} sm={10} md={5} lg={5}>
             <div className="position-relative">
-              <Image src={client1} alt="image" className="img-fluid" />
+              <Image
+                src={client1}
+                alt="image"
+                className="img-fluid"
+                style={{ height: "400px" }}
+              />
             </div>
           </Col>
         </Row>

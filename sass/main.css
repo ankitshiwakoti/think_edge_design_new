@@ -12220,19 +12220,57 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.mainsliders {
-  opacity: 0.6;
+.faqAccordion {
+  --bs-accordion-color: black;
+  --bs-accordion-bg: #ffffff;
+  --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  --bs-accordion-border-color: #E6E6E6;
+  --bs-accordion-border-width: var(--bs-border-width);
+  --bs-accordion-btn-padding-x: 1.25rem;
+  --bs-accordion-btn-padding-y: 1rem;
+  --bs-accordion-btn-color: #212121;
+  --bs-accordion-inner-btn-border-color: red;
+  --bs-accordion-btn-bg: var(--bs-accordion-bg);
+  --bs-accordion-btn-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>');
+  --bs-accordion-btn-icon-width: 1.25rem;
+  --bs-accordion-btn-icon-transform: rotate(-180deg);
+  --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+  --bs-accordion-btn-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"> <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/> </svg>');
+  --bs-accordion-body-padding-x: 1.25rem;
+  --bs-accordion-body-padding-y: 1rem;
+  --bs-accordion-active-color: #212121;
+  --bs-accordion-active-bg: #ffffff;
 }
 
-.mainsliders:hover {
-  opacity: 1;
+.slidercontents {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: black;
+  transition: opacity 0.6s ease-in-out !important;
+  cursor: pointer;
 }
-.mainsliders:hover .imgslides {
-  opacity: 1 !important;
-  background-color: rgb(0, 0, 0) !important;
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.mainsliders:hover .slidercontents {
-  opacity: 0.9 !important;
-  color: white !important;
-  transition: all 0.3s ease-in-out !important;
+
+.content h3, .content .h3 {
+  color: #F2F2F2 !important;
+}
+
+.content p {
+  color: #F2F2F2 !important;
+}
+
+.slidercontents:hover {
+  opacity: 0.6 !important;
 }/*# sourceMappingURL=main.css.map */

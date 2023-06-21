@@ -140,38 +140,39 @@ const Hero = () => {
               <Slider {...settings} className="slick-prevs">
                 {data?.map((items, index) => (
                   <div className="position-relative " key={index}>
-                    <div>
-                      <Image
-                        src={items.img}
-                        alt="image"
-                        style={{ width: "100%", height: "700px" }}
-                      />
-                    </div>
+                    <div
+                      className="tryhero position-absolute"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                      }}
+                    ></div>
+                    <Image
+                      src={items.img}
+                      alt="image"
+                      className=""
+                      style={{ width: "100%", height: "800px" }}
+                      // fill
+                    />
+
                     <div
                       className="position-absolute  text-center"
                       style={{
                         color: "white",
 
-                        top: "28%",
-                        right: "28%",
+                        top: "22%",
+                        right: "100%",
+                        width: "100%",
+                        height: "100vh",
                       }}
                     >
-                      <h1
-                        className=" mb-0 text-uppercase"
-                        style={{ lineHeight: "53.2px", fontWeight: "500" }}
-                      >
+                      <h1 className=" mb-0 text-uppercase lh-base fw-medium">
                         Close your eyes
                       </h1>
-                      <h1
-                        className=" mb-0 text-uppercase"
-                        style={{ lineHeight: "53.2px", fontWeight: "500" }}
-                      >
+                      <h1 className=" mb-0 text-uppercase lh-base fw-medium">
                         Give your dreams a shape
                       </h1>
-                      <h1
-                        className=" mb-4 text-uppercase"
-                        style={{ lineHeight: "53.2px", fontWeight: "500" }}
-                      >
+                      <h1 className=" mb-4 text-uppercase lh-base fw-medium">
                         of reality
                       </h1>
 

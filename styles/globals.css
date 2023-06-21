@@ -1,9 +1,9 @@
 :root {
   --step-0: clamp(1.625rem, 5vw, 2.56rem); /* h1 26px , 41px*/
   --step-1: clamp(1.5rem, 4.6vw, 1.93rem); /* h2 24px , 31px*/
-  --step-2: clamp(1.375rem, 4.3vw, 1.35rem); /* h3 22px , 25px*/
-  --step-3: clamp(1.25rem, 4vw, 1.56rem); /* h4 20px , 20px*/
-  --step-4: clamp(1.125rem, 4vw, 1.375rem); /* h5 18px , 22px*/
+  --step-2: clamp(1.375rem, 4.3vw, 1.56rem); /* h3 22px , 25px*/
+  --step-3: clamp(1rem, 4vw, 1.25rem); /* h4 20px , 20px*/
+  --step-4: clamp(0.875rem, 4vw, 1.125rem); /* h5 18px , 22px*/
 
   --step-5: clamp(1rem, 4vw, 1.375rem); /* p22 16px , 22px*/
   --step-6: clamp(0.875rem, 3vw, 1rem); /* p 14px , 16px*/
@@ -54,6 +54,9 @@ p {
   font-size: var(--step-6) !important;
 }
 
+.contact p {
+  font-size: var(--step-6) !important;
+}
 .df-bottombar-branding {
   display: none;
 }
@@ -82,9 +85,9 @@ p {
   /* transition: all 1s ease-in !important; */
 }
 
-.navhov:active {
+/* .navhov:active {
   border: none;
-}
+} */
 
 .nabbtnhov {
   font-family: Roboto Slab;
@@ -215,7 +218,7 @@ p {
   line-height: 24px !important;
 }
 /* design process */
-
+/* 
 .headingdesign {
   color: #212121;
 }
@@ -229,7 +232,7 @@ p {
   font-weight: 400;
 
   color: #525252;
-}
+} */
 .designhov {
   background-color: #fafafa !important;
 }
@@ -371,6 +374,20 @@ p {
 /* ATBBV3kYzXTE8NCdvS8GNPXbCHcgE2B467E0 */
 
 /* hero section */
+
+.tryhero {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* opacity: 0.6; */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* transition: opacity 0.6s ease-in-out !important;
+  cursor: pointer; */
+}
+/* .tryhero:hover {
+  opacity: 0.6 !important;
+} */
 .vl {
   border-left: solid #fafafa;
   border-width: thin;
@@ -412,7 +429,7 @@ p {
   margin: 0;
   list-style: none;
   text-align: center;
-  top: 37%;
+  top: 34%;
   right: 1%;
 }
 .slick-dots ol,
@@ -469,6 +486,12 @@ dl {
 }
 
 /* form  */
+
+.bordertry {
+  border: #895d2b !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+}
 .css-13cymwt-control {
   background: inherit !important;
   border-radius: 20px;
@@ -477,7 +500,7 @@ dl {
 
 .PhoneInputInput {
   border: none !important;
-  background-color: #343131 !important;
+  background-color: #f2f1eb !important;
   color: #ababab !important;
 }
 ::placeholder {
@@ -496,7 +519,7 @@ dl {
   color: #ababab !important;
 }
 
-.fofn {
+/* .fofn {
   font-weight: 300;
   font-size: 41px;
   line-height: 49.2px;
@@ -508,4 +531,22 @@ dl {
 .fopbody {
   font-weight: 400;
   font-size: 16px;
+} */
+
+/* client */
+
+.client .slick-arrow.slick-prev,
+.client .slick-arrow.slick-next {
+  background: transparent;
+  width: 80px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  top: 80%;
+  left: 60%;
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: #525252; */
 }

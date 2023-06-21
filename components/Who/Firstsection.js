@@ -23,7 +23,7 @@ const data = [
 const Firstsection = () => {
   return (
     <Col xs={12} sm={12} md={6} lg={6} className="p-0">
-      <Row className="mt-3 who">
+      <Row className="mt-4 who">
         <div>
           <p className="whoe">
             Our exceptional multinational team offers reliable quality services
@@ -33,7 +33,7 @@ const Firstsection = () => {
             to translate their physical and emotional desires into tailored
             interiors.
           </p>
-          <button className=" blogbtn whobtn shadow-sm  btn border border-black-subtle rounded-0">
+          <button className=" mt-4 blogbtn whobtn shadow-sm  btn border border-black-subtle rounded-0">
             GET TO KNOW US
             <span className="p-2 ">
               {" "}
@@ -42,8 +42,8 @@ const Firstsection = () => {
           </button>
         </div>
       </Row>
-      <Row className="mt-4">
-        <div className="d-flex gap-2">
+      <Row className="mt-4 pb-0">
+        <div className="d-flex pt-3 mt-2 gap-2">
           {data?.map((items, index) => (
             <div class=" rounded-0 border-0 " key={index}>
               <Image src={items.image} class="img-fluid" alt="image" />

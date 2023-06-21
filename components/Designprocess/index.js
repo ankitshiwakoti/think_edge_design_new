@@ -36,16 +36,18 @@ const Designprocess = () => {
         <Row>
           {data?.map((items, index) => (
             <Col className="p-0 mt-4" xs={12} sm={6} md={6} lg={3} key={index}>
-              <div class="designhov  card rounded-0 p-0">
-                <div class="card-body testcolor">
+              <div class="designhov  card rounded-0 p-0 ">
+                <div class="card-body testcolor pb-4">
                   <div
                     className="hovsmall bg-primary mt-3 p-3 d-flex justify-content-center align-items-center"
                     style={{ width: "100px", color: "white" }}
                   >
-                    <h2 className="">{items.num}</h2>
+                    <h1 className="">{items.num}</h1>
                   </div>
-                  <h3 class=" mt-4 p  ">{items.title}</h3>
-                  <p class=" mt-3 p  ">{items.body}</p>
+                  <h3 class=" mt-4 p-2 ps-0 p fw-medium ">{items.title}</h3>
+                  <p class=" mt-4 p fw-normal " style={{ color: "#525252" }}>
+                    {items.body}
+                  </p>
                 </div>
               </div>
             </Col>

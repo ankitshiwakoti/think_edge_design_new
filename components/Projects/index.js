@@ -88,11 +88,13 @@ function SampleNextArrow(props) {
         color: "#895d2b",
         fontWeight: "400",
         fontSize: "14px",
+        top: "83%",
+        left: "69%",
       }}
       onClick={onClick}
     >
       <span> Next</span>
-      <span className="ms-1">
+      <span className="ms-1 ">
         <i class="bi bi-arrow-right"> </i>
       </span>
     </div>
@@ -108,12 +110,12 @@ function SamplePrevArrow(props) {
         color: "#895d2b ",
         fontWeight: "400",
         fontSize: "14px",
-        top: "80%",
-        left: "52%",
+        top: "83%",
+        left: "61%",
       }}
       onClick={onClick}
     >
-      <span className="me-1">
+      <span className="me-1 mt-1">
         <i class="bi bi-arrow-left"> </i>
       </span>
       <span> previous</span>
@@ -188,7 +190,7 @@ const Projects = () => {
             <Slider {...settings}>
               {data?.map((items, index) => (
                 <div className=" position-relative">
-                  <Col xs={8} sm={8} md={7} lg={7}>
+                  <Col xs={8} sm={8} md={8} lg={8}>
                     <div
                       className="position-relative"
                       style={{ height: "700px", width: "100%" }}
@@ -196,19 +198,20 @@ const Projects = () => {
                       <Image
                         src={items.image}
                         alt="img"
+                        // className="img-fluid"
                         // height={650}
-                        // style={{ width: "100%" }}
-                        fill
+                        style={{ width: "100%", height: "100%" }}
+                        // fill
                       />
                     </div>
                   </Col>
                   <Col
                     xs={10}
                     sm={10}
-                    md={6}
-                    lg={6}
-                    className="position-absolute top-25  "
-                    style={{ top: "3%", right: "0%" }}
+                    md={5}
+                    lg={5}
+                    className="position-absolute  mx-2 ps-3 top-25  "
+                    style={{ top: "5%", right: "0%" }}
                   >
                     <div
                       className=" p-4 pt-5 mb-5 pb-5"
@@ -217,11 +220,11 @@ const Projects = () => {
                       <h3 className="text-uppercase fw-medium">
                         {items.title}{" "}
                       </h3>
-                      <h4 className="text-uppercase fw-light">
+                      <h4 className="text-uppercase pt-2 fw-light">
                         {items.subtitle}
                       </h4>
                       <p
-                        className="pt-2 fw-regular"
+                        className="pt-3 fw-regular"
                         style={{ color: "#525252" }}
                       >
                         {items.body}

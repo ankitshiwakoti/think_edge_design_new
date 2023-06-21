@@ -96,7 +96,7 @@ const Form1 = () => {
               width: "97rem",
               borderRadius: "10px",
               Color: "#ABABAB",
-              backgroundColor: "#343131",
+              backgroundColor: "#F2F1EB",
             }}
             className=" px-4 py-md-3 py-2 formContainer inputfs w-100"
           >
@@ -104,18 +104,18 @@ const Form1 = () => {
             <div className="d-flex justify-content-between">
               <Form.Group
                 className="  mt-2 pb-0 mt-md-0 py-xl-2 w-100 me-3"
-                style={{ color: "#ababab", backgroundColor: "#343131" }}
+                style={{ color: "#525252", backgroundColor: "#F2F1EB" }}
               >
                 <lable htmlFor="name">Name</lable>
                 <FastField
-                  className="rounded-0 form-control border border-secondary"
+                  className="rounded-0 form-control  bordertry"
                   placeholder="Steven Jackson*"
                   type="text"
                   id="name"
                   name="textField[0].fullName"
                   style={{
                     color: "#ababab",
-                    backgroundColor: "#343131",
+                    backgroundColor: "#F2F1EB",
                   }}
                 />
                 <ErrorMessage
@@ -127,16 +127,16 @@ const Form1 = () => {
                 <lable
                   className=""
                   style={{
-                    backgroundColor: "#343131",
-                    color: "#ababab",
+                    backgroundColor: "#F2F1EB",
+                    color: "#525252",
                   }}
                   htmlFor="name"
                 >
                   Phone no.
                 </lable>
                 <Form.Group
-                  className=" rounded-0 border border-secondary   w-100 form-control"
-                  style={{ color: "#ababab", backgroundColor: "#343131" }}
+                  className=" rounded-0  bordertry   w-100 form-control"
+                  style={{ color: "#525252", backgroundColor: "#F2F1EB" }}
                 >
                   <PhoneInput
                     className=""
@@ -145,7 +145,7 @@ const Form1 = () => {
                     onChange={setValue}
                     defaultCountry="AU"
                     style={{
-                      backgroundColor: "#343131",
+                      backgroundColor: "#F2F1EB",
                       color: "#ababab",
                     }}
                     // style={{ backgroundColor: "black", color: "black" }}
@@ -167,45 +167,49 @@ const Form1 = () => {
             </div>
             <Form.Group
               className="mt-2 mt-md-0 py-xl-2 w-100 me-3"
-              style={{ color: "#ababab", backgroundColor: "#343131" }}
+              style={{ color: "#525252", backgroundColor: "#F2F1EB" }}
             >
               <lable htmlFor="name">Email Address</lable>
               <FastField
-                className=" rounded-0 form-control border border-secondary"
+                className=" imputborder bordertry rounded-0 form-control   "
                 placeholder="ankit.shiwakoti.com.np"
                 type="email"
                 id="email"
                 name="textField[0].email"
-                style={{ color: "#ababab", backgroundColor: "#343131" }}
+                style={{
+                  color: "#ababab",
+
+                  backgroundColor: "#F2F1EB",
+                }}
               />
               <ErrorMessage name="textField[0].email" component={TextError} />
             </Form.Group>
             <Form.Group
               className="mt-0 mt-md-0 py-2"
-              style={{ color: "#ababab", backgroundColor: "#343131" }}
+              style={{ color: "#525252", backgroundColor: "#F2F1EB" }}
             >
               <lable htmlFor="name">Message</lable>
               <FastField
                 rows={5}
-                className=" rounded-0 form-control border border-secondary "
+                className=" rounded-0 form-control bordertry "
                 placeholder="Message*"
                 as="textarea"
                 id="message"
                 name="textField[0].message"
-                style={{ color: "#ababab", backgroundColor: "#343131" }}
+                style={{ color: "#ABABAB", backgroundColor: "#F2F1EB" }}
               />
               <ErrorMessage name="textField[0].message" component={TextError} />
             </Form.Group>
             {/* Submit Button */}
             <div className="d-flex justify-content-start mt-4 ">
               <div
-                className=" blogbtn btn rounded-0 border border-secondary "
+                className=" blogbtn btn rounded-0 bordertry "
                 type="submit"
                 disabled={loading}
                 style={{
                   cursor: "pointer",
-                  color: "#ababab",
-                  backgroundColor: "#343131",
+                  color: "#212121",
+                  backgroundColor: "#F2F1EB",
                   borderColor: "red",
                 }}
               >
