@@ -67,7 +67,7 @@ const Who = () => {
                 alt="image"
                 className="img-fluid"
                 // style={{ objectFit: "contain" }}
-                style={{ height: "470px", width: "100%" }}
+                style={{ height: "473px", width: "100%" }}
               />
             </div>
           </Col>

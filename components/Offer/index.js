@@ -110,7 +110,7 @@ const Offer = () => {
                 src={active}
                 alt="image"
                 className="img-fluid"
-                style={{ height: "422px" }}
+                style={{ height: "420px" }}
               />
             </div>
           </Col>
