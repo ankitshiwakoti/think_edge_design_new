@@ -79,9 +79,9 @@ p {
 }
 
 .navhov:hover {
-  border-bottom: solid 1px;
-  border-color: #a18565;
-  color: #a18565 !important;
+  border-bottom: solid 4px;
+  border-color: #895d2b;
+  color: #895d2b !important;
   /* transition: all 1s ease-in !important; */
 }
 
@@ -454,11 +454,11 @@ dl {
   border-radius: 50%; */
   margin-top: 5px !important;
 }
-.slick-dots li:active {
+/* .slick-dots li:active {
   border: 5px solid !important;
   border-width: thick !important;
   border-radius: 50%;
-}
+} */
 
 .slick-dots li button::before {
   font-size: 6px !important;
@@ -468,7 +468,7 @@ dl {
   justify-content: center !important;
   width: 8px !important;
   height: 8px !important;
-  padding: 8px !important;
+  padding: 9px !important;
   padding-bottom: 8px !important;
   cursor: pointer;
   color: white !important;

@@ -69,7 +69,7 @@ function SampleNextArrow(props) {
       }}
       onClick={onClick}
     >
-      <span> Next</span>
+      <span className="text-uppercase"> Next</span>
       <span className="ms-1 ">
         <i class="bi bi-arrow-right"> </i>
       </span>
@@ -94,7 +94,7 @@ function SamplePrevArrow(props) {
       <span className="me-1 mt-1">
         <i class="bi bi-arrow-left"> </i>
       </span>
-      <span> previous</span>
+      <span className="text-uppercase"> previous</span>
     </div>
   );
 }
@@ -142,9 +142,9 @@ const Client = () => {
     ],
   };
   return (
-    <section className="client">
+    <section className="client pt-5">
       <Container className=" p-0">
-        <div className=" mt-5 position">
+        <div className=" mt-3 position">
           <h2>WHAT OUR CLIENT SAY</h2>
         </div>
         <Row className="my-5 position-relative ">
@@ -193,7 +193,10 @@ const Client = () => {
                           </p>
                         </div>
                       </div>
-                      <p class="fw-light text-body-secondary p-3  mb-5">
+                      <p
+                        class="fw-light text-body-secondary p-3 pe-1  mb-5"
+                        style={{ lineHeight: "180%" }}
+                      >
                         {items.body}
                       </p>
                     </div>

@@ -29,13 +29,20 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
 
 //custom variables
-$accordion-bg: #ffffff;
+$accordion-bg: #FFFEFE;
 $accordion-color: black;
-$accordion-button-color: $primary;
-$accordion-button-active-bg: #ffffff;
-$accordion-button-active-color: $primary;
+$accordion-button-color: #A18565;
+$accordion-button-active-bg: #A18565;
+$accordion-button-active-color: #F2F1EB;
 $accordion-border-color: #E6E6E6;
 $accordion-inner-border-color:red;
+$accordion-btn-color:red;
+$accordion-icon-width:18px;
+$accordion-btn-icon-color:white;
+// $accordion-button-bg:Red;
+$accordion-icon-color:white;
+$accordion-icon-active-color:red;
+
 // $accordion-button-bg: white;
 .faqAccordion {
   --#{$prefix}accordion-color: #{$accordion-color};
@@ -48,15 +55,19 @@ $accordion-inner-border-color:red;
   --#{$prefix}accordion-btn-color: #{$accordion-button-color};
   --#{$prefix}accordion-inner-btn-border-color: #{$accordion-inner-border-color};
   --#{$prefix}accordion-btn-bg: #{$accordion-button-bg};
-  --#{$prefix}accordion-btn-icon: #{url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>')};
+  --#{$prefix}accordion-btn-icon: #{url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="SaddleBrown" class="bi bi-arrow-down-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"/></svg>')};
   --#{$prefix}accordion-btn-icon-width: #{$accordion-icon-width};
+  --#{$prefix}accordion-icon-color: #{$accordion-icon-color}; 
+  --#{$prefix}accordion-icon-active-color: #{$accordion-icon-active-color}; 
   --#{$prefix}accordion-btn-icon-transform: #{$accordion-icon-transform};
   --#{$prefix}accordion-btn-icon-transition: #{$accordion-icon-transition};
-  --#{$prefix}accordion-btn-active-icon:  #{url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"> <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/> </svg>')};
+  --#{$prefix}accordion-btn-active-icon:  #{url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="white" class="bi bi-arrow-up-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/></svg>')};
   --#{$prefix}accordion-body-padding-x: #{$accordion-body-padding-x};
   --#{$prefix}accordion-body-padding-y: #{$accordion-body-padding-y};
   --#{$prefix}accordion-active-color: #{$accordion-button-active-color};
   --#{$prefix}accordion-active-bg: #{$accordion-button-active-bg};
+
+ 
 }
 
 

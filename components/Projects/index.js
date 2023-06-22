@@ -88,12 +88,12 @@ function SampleNextArrow(props) {
         color: "#895d2b",
         fontWeight: "400",
         fontSize: "14px",
-        top: "83%",
-        left: "69%",
+        top: "87%",
+        left: "71%",
       }}
       onClick={onClick}
     >
-      <span> Next</span>
+      <span className="text-uppercase"> Next</span>
       <span className="ms-1 ">
         <i class="bi bi-arrow-right"> </i>
       </span>
@@ -110,15 +110,15 @@ function SamplePrevArrow(props) {
         color: "#895d2b ",
         fontWeight: "400",
         fontSize: "14px",
-        top: "83%",
-        left: "61%",
+        top: "87%",
+        left: "64%",
       }}
       onClick={onClick}
     >
-      <span className="me-1 mt-1">
+      <span className="me-1  mt-1">
         <i class="bi bi-arrow-left"> </i>
       </span>
-      <span> previous</span>
+      <span className="text-uppercase"> previous</span>
     </div>
   );
 }
@@ -166,7 +166,7 @@ const Projects = () => {
   };
   return (
     <section id="projects" className="pt-5 projects">
-      <Container className="p-0">
+      <Container className="">
         <Row className="my-5">
           <div className="p-0 justify-content-start col-md-6 col-lg-6 col-sm-6 col-xs-12">
             <h2 className=" fw-normal text-uppercase">our latest projects </h2>
@@ -192,7 +192,7 @@ const Projects = () => {
                 <div className=" position-relative">
                   <Col xs={8} sm={8} md={8} lg={8}>
                     <div
-                      className="position-relative"
+                      className="position-relative pe-5 pb-2 pt-3"
                       style={{ height: "700px", width: "100%" }}
                     >
                       <Image
@@ -210,11 +210,11 @@ const Projects = () => {
                     sm={10}
                     md={5}
                     lg={5}
-                    className="position-absolute  mx-2 ps-3 top-25  "
+                    className="position-absolute   ps-3 top-25  "
                     style={{ top: "5%", right: "0%" }}
                   >
                     <div
-                      className=" p-4 pt-5 mb-5 pb-5"
+                      className=" p-4 ps-5 pt-5 mb-4 "
                       style={{ color: "#212121", backgroundColor: " #F2F1EB" }}
                     >
                       <h3 className="text-uppercase fw-medium">
@@ -230,22 +230,22 @@ const Projects = () => {
                         {items.body}
                       </p>
                       <div className="pt-3">
-                        <h4 className="text-uppercase fw-light">
+                        <h4 className="text-uppercase pb-2 fw-light">
                           {items.ftitle}
                         </h4>
-                        <p className="mb-1" style={{ color: "#525252" }}>
-                          1.{items.l1}
+                        <p className="mb-2" style={{ color: "#525252" }}>
+                          1. {items.l1}
                         </p>
-                        <p className="mb-1" style={{ color: "#525252" }}>
+                        <p className="mb-2" style={{ color: "#525252" }}>
                           2. {items.l2}
                         </p>
-                        <p className="mb-1" style={{ color: "#525252" }}>
+                        <p className="mb-2" style={{ color: "#525252" }}>
                           3. {items.l3}{" "}
                         </p>
-                        <p className="mb-1" style={{ color: "#525252" }}>
+                        <p className="mb-2" style={{ color: "#525252" }}>
                           4. {items.l4}{" "}
                         </p>
-                        <p className="mb-1" style={{ color: "#525252" }}>
+                        <p className="mb-2" style={{ color: "#525252" }}>
                           5. {items.l5}
                         </p>
                       </div>

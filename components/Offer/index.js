@@ -52,8 +52,8 @@ const Offer = () => {
   const [activetitle, setActivetitle] = useState(data[0]?.title);
   return (
     <section className="mt-5 ">
-      <Container className="p-0">
-        <h2 className="">What We Offer</h2>
+      <Container className="">
+        <h2 className="fw-medium">OUR SERVICES</h2>
         <Row className="mt-4 ">
           <Col className="p-0" xs={12} sm={6} md={4} lg={4}>
             <Accordion defaultActiveKey="0" bsPrefix="faqAccordion" flush>

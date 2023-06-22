@@ -64,12 +64,19 @@ const Blog = () => {
                 </div>
                 <div class="card-body" style={{ backgroundColor: "#ffffff" }}>
                   <div className="text-body-secondary mb-2  d-flex justify-content-between">
-                    <small>Eco-friendly home scents</small>
+                    <small className="fw-semibold" style={{ color: "#895D2B" }}>
+                      Eco-friendly home scents
+                    </small>
                     <small>May 30, 2023</small>
                   </div>
-                  <h3 class="fw-normal blogtitle">{items.title}</h3>
-                  <p class=" blogtext fw-normal">{items.body}</p>
-                  <div className="pt-2">
+                  <h4
+                    class="fw-semibold pt-2 blogtitle"
+                    style={{ color: "#525252", lineHeight: "130%" }}
+                  >
+                    {items.title}
+                  </h4>
+                  <p class="pt-2 blogtext fw-normal">{items.body}</p>
+                  <div className="pt-4 pb-3">
                     <button className=" blogbtn btn  shadow-sm border border-black border-opacity-25 text-primary rounded-0">
                       LEARN MORE
                       <span className="p-2">

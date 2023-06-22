@@ -59,7 +59,7 @@ const Who = () => {
               </div>
             </div>
           </Col>
-          <Col xs={12} sm={12} md={6} lg={6} className="">
+          <Col xs={12} sm={12} md={6} lg={6} className="pe-0">
             <div className="mt-4">
               {/* <Image src={who1} alt="image" className="img-fluid " /> */}
               <Image

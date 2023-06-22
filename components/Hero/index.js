@@ -210,13 +210,13 @@ const Hero = () => {
                             }}
                           >
                             <Link
-                              className="p-4"
+                              className="p-4 d-flex align-items-center justify-content-center "
                               onClick={() => setProgress(100)}
                               href={v.link}
                               target="_blank"
-                              style={{ color: "white", fontSize: "14px" }}
+                              style={{ color: "white", fontSize: "16px" }}
                             >
-                              <i className={v.icon} />
+                              <i className={`${v.icon} `} />
                             </Link>
                           </div>
                         ))}

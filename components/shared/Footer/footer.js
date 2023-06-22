@@ -77,23 +77,20 @@ const Footer = () => {
                 </span>
               </div>
 
-              <div className="d-flex justify-content-start gap-3 pt-3">
+              <div className="d-flex justify-content-start align-items-center gap-3 pt-3">
                 <div className=" ">
-                  <span className=" p-2 border border-primary rounded-circle">
-                    <i class="bi bi-facebook"></i>
+                  <span className=" p-2 border border-primary rounded-circle ">
+                    <i class="bi bi-facebook p-1"></i>
                   </span>
                 </div>
                 <div className="">
                   <span className=" p-2 border border-primary rounded-circle">
-                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-linkedin p-1"></i>
                   </span>
                 </div>
                 <div className="">
-                  <span
-                    className="p-2  border border-primary rounded-circle "
-                    style={{ color: "black", backgroundColor: "white" }}
-                  >
-                    <i class="  bi bi-instagram"></i>
+                  <span className="p-2  border border-primary rounded-circle ">
+                    <i class="  bi bi-instagram p-1"></i>
                   </span>
                 </div>
               </div>

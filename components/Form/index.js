@@ -98,7 +98,7 @@ const Form1 = () => {
               Color: "#ABABAB",
               backgroundColor: "#F2F1EB",
             }}
-            className=" px-4 py-md-3 py-2 formContainer inputfs w-100"
+            className=" pe-0 px-4 py-md-3 py-2 formContainer inputfs w-100"
           >
             {/* TextField Inputs */}
             <div className="d-flex justify-content-between">
