@@ -66,7 +66,9 @@ const Offer = () => {
                   }}
                 >
                   <Accordion.Header>{items.title}</Accordion.Header>
-                  <Accordion.Body>{items.body}</Accordion.Body>
+                  <Accordion.Body style={{ backgroundColor: "#F2F1EB" }}>
+                    {items.body}
+                  </Accordion.Body>
                 </Accordion.Item>
               ))}
             </Accordion>
