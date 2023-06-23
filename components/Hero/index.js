@@ -78,11 +78,20 @@ const Hero = () => {
     arrows: false,
     infinite: true,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 4000,
-    cssEase: "linear",
+
+    // speed: 2000,
+    // autoplaySpeed: 4000,
+    // cssEase: "linear",
     slidesToShow: 1,
     slidesToScroll: 1,
+    // beforeChange: (current, next) => {
+    //   const slickList = document.querySelector(".slick-list");
+    //   slickList.style.transform = "translateY(0)";
+    // },
+    // afterChange: (current) => {
+    //   const slickList = document.querySelector(".slick-list");
+    //   slickList.style.transform = "translateY(-100%)";
+    // },
     // appendDots: (dots) => (
     //   <div
     //     style={{
@@ -137,9 +146,9 @@ const Hero = () => {
         <Row className="">
           <Col xs={12} sm={12} md={12} lg={12} className="p-0">
             <div>
-              <Slider {...settings} className="slick-prevs">
+              <Slider {...settings}>
                 {data?.map((items, index) => (
-                  <div className="position-relative " key={index}>
+                  <div className="position-relative  " key={index}>
                     <div
                       className="tryhero position-absolute"
                       style={{
@@ -147,16 +156,20 @@ const Hero = () => {
                         height: "100%",
                       }}
                     ></div>
-                    <Image
-                      src={items.img}
-                      alt="image"
-                      className=""
-                      style={{ width: "100%", height: "800px" }}
-                      // fill
-                    />
-
+                    <div>
+                      <Image
+                        src={items.img}
+                        alt="image"
+                        className=""
+                        style={{ width: "100%", height: "800px" }}
+                        // fill
+                      />
+                    </div>
                     <div
                       className="position-absolute  text-center"
+                      data-aos="fade-up"
+                      data-aos-easing="liner"
+                      data-aos-duration="3000"
                       style={{
                         color: "white",
 

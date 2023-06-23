@@ -51,7 +51,12 @@ const Blog = () => {
         <Row>
           {data?.map((items, index) => (
             <Col xs={12} sm={6} md={6} lg={4} key={index} className="">
-              <div class="card bg-white border border-1  rounded-0">
+              <div
+                class="card bg-white border border-1  rounded-0"
+                data-aos="zoom-in-up"
+                data-aos-duration="2000"
+                data-aos-once="false"
+              >
                 <div
                   className="p-3 pb-0"
                   style={{ backgroundColor: "#ffffff" }}
@@ -70,8 +75,8 @@ const Blog = () => {
                     <small>May 30, 2023</small>
                   </div>
                   <h4
-                    class="fw-semibold pt-2 blogtitle"
-                    style={{ color: "#525252", lineHeight: "130%" }}
+                    class="fw-normal pt-2 blogtitle"
+                    style={{ color: "#525252", lineHeight: "140%" }}
                   >
                     {items.title}
                   </h4>

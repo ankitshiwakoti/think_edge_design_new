@@ -166,6 +166,9 @@ const Client = () => {
                   <div
                     class="card rounded-0 "
                     style={{ backgroundColor: "#F2F1EB" }}
+                    data-aos="fade-left"
+                    data-aos-duration="2000"
+                    data-aos-once="false"
                   >
                     <div
                       class="card-body p-4  pe-0 "
@@ -207,7 +210,12 @@ const Client = () => {
           </Col>
           <Col md={7} className="p-0"></Col>
           <Col xs={10} sm={10} md={5} lg={5}>
-            <div className="position-relative">
+            <div
+              className="position-relative"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-once="false"
+            >
               <Image
                 src={client1}
                 alt="image"

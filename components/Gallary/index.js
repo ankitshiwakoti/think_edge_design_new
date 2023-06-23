@@ -123,7 +123,12 @@ const Gallary = () => {
           <h2 className="fw-normal">GALLERY</h2>
           <Row className="mt-4">
             <Col xs={12} sm={12} md={7} lg={7}>
-              <div className="  mainsliders position-relative">
+              <div
+                className="  mainsliders position-relative"
+                data-aos="flip-left"
+                data-aos-easing="liner"
+                data-aos-duration="2000"
+              >
                 <Image src={image1} alt="image" className="img-fluid" />
                 <div className="slidercontents text-center position-absolute  ">
                   <div className="content position-relative">
@@ -152,7 +157,12 @@ const Gallary = () => {
               </div>
             </Col>
             <Col xs={12} sm={12} md={5} lg={5}>
-              <div className="  mainsliders position-relative">
+              <div
+                className="  mainsliders position-relative"
+                data-aos="flip-up"
+                data-aos-easing="liner"
+                data-aos-duration="2000"
+              >
                 <Image src={image2} alt="image" className="img-fluid" />
 
                 <div className="slidercontents text-center  position-absolute  ">
@@ -166,7 +176,12 @@ const Gallary = () => {
           </Row>
           <Row className="mt-4">
             <Col xs={6} sm={6} md={4} lg={4}>
-              <div className="  mainsliders position-relative">
+              <div
+                className="  mainsliders position-relative"
+                data-aos="zoom-in-left"
+                data-aos-easing="liner"
+                data-aos-duration="2000"
+              >
                 <Image src={image3} alt="image" className="img-fluid" />
 
                 <div className="slidercontents text-center  position-absolute  ">
@@ -178,7 +193,12 @@ const Gallary = () => {
               </div>
             </Col>
             <Col xs={6} sm={6} md={4} lg={4}>
-              <div className="  mainsliders position-relative">
+              <div
+                className="  mainsliders position-relative"
+                data-aos="zoom-in"
+                data-aos-easing="liner"
+                data-aos-duration="2000"
+              >
                 <Image src={image4} alt="image" className="img-fluid" />
                 <div className="slidercontents text-center  position-absolute  ">
                   <div className="content position-relative">
@@ -189,7 +209,12 @@ const Gallary = () => {
               </div>
             </Col>
             <Col xs={6} sm={6} md={4} lg={4}>
-              <div className="  mainsliders position-relative">
+              <div
+                className="  mainsliders position-relative"
+                data-aos="zoom-in-left"
+                data-aos-easing="liner"
+                data-aos-duration="2000"
+              >
                 <Image src={image5} alt="image" className="img-fluid" />
                 <div
                   className="slidercontents text-center  position-absolute  "

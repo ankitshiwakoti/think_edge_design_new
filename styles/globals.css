@@ -59,6 +59,13 @@ p {
   font-size: var(--step-6) !important;
 }
 
+/* .headingline {
+  border-left: solid #d42626;
+  border-width: thin;
+  width: 100px;
+  height: 2px;
+} */
+
 .df-bottombar-branding {
   display: none;
 }
@@ -382,6 +389,10 @@ p {
 
 /* hero section */
 
+/* start  */
+
+/* end of hero up slider */
+
 .tryhero {
   width: 100%;
   height: 100%;
@@ -476,7 +487,7 @@ dl {
   width: 8px !important;
   height: 8px !important;
   padding: 9px !important;
-  padding-bottom: 9px !important;
+  padding-bottom: 9 px !important;
   cursor: pointer;
   color: white !important;
   border: 0;

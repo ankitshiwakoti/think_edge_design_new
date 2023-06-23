@@ -31,18 +31,24 @@ const data = [
 const Designprocess = () => {
   return (
     <section className="my-5 design">
-      <Container className="p-0">
-        <h2 className="mt-4 fw-normal text-uppercase">design process</h2>
-        <Row>
+      <Container className="">
+        <Row className="mt-4">
+          <h2 className=" mb-3 fw-normal ps-0 text-uppercase">
+            design process
+          </h2>
           {data?.map((items, index) => (
-            <Col className="p-0 mt-4" xs={12} sm={6} md={6} lg={3} key={index}>
-              <div class="designhov  card border-opacity-25 rounded-0 p-0 ">
+            <Col className="mt-4 p-0" xs={12} sm={6} md={6} lg={3} key={index}>
+              <div
+                class="designhov  card border-opacity-25 rounded-0 p-0 "
+                data-aos="flip-right"
+                data-aos-duration="3000"
+                data-aos-once="false"
+              >
                 <div class="card-body testcolor pb-4">
                   <div
                     className="hovsmall  mt-3 p-1 d-flex justify-content-center align-items-center"
                     style={{
                       width: "100px",
-
                       backgroundColor: "#FFFFFF",
                     }}
                   >

@@ -31,7 +31,11 @@ const Who = () => {
           <h2 className="p-0 fw-medium text-uppercase">who we are?</h2>
           <Col xs={12} sm={12} md={6} lg={6} className="p-0">
             <div className="mt-4 who">
-              <div>
+              <div
+                data-aos="zoom-in"
+                data-aos-easing="liner"
+                data-aos-duration="2000"
+              >
                 <p className="">
                   Our exceptional multinational team offers reliable quality
                   services both nationally and internationally. Nature,
@@ -52,7 +56,13 @@ const Who = () => {
             <div className="mt-4 ">
               <div className="d-flex pt-3 mt-2 gap-2">
                 {data?.map((items, index) => (
-                  <div class=" rounded-0 border-0 " key={index}>
+                  <div
+                    class=" rounded-0 border-0 "
+                    data-aos="zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"
+                    key={index}
+                  >
                     <Image src={items.image} class="img-fluid" alt="image" />
                   </div>
                 ))}
@@ -60,7 +70,13 @@ const Who = () => {
             </div>
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} className="pe-0">
-            <div className="mt-4">
+            {/* <div data-aos="fade-left"></div> */}
+            <div
+              className="mt-4"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               {/* <Image src={who1} alt="image" className="img-fluid " /> */}
               <Image
                 src={whosecond}

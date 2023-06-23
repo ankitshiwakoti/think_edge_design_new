@@ -54,8 +54,19 @@ const Offer = () => {
     <section className="mt-5 ">
       <Container className="">
         <h2 className="fw-medium">OUR SERVICES</h2>
+        <div className="headingline"></div>
         <Row className="mt-4 ">
-          <Col className="p-0" xs={12} sm={6} md={4} lg={4}>
+          <Col
+            className="p-0"
+            xs={12}
+            sm={6}
+            md={4}
+            lg={4}
+            data-aos="flip-right"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+            data-aos-once="false"
+          >
             <Accordion defaultActiveKey="0" bsPrefix="faqAccordion" flush>
               {data?.map((items, index) => (
                 <Accordion.Item
@@ -105,7 +116,13 @@ const Offer = () => {
             ))} */}
           </Col>
           <Col className="pe-0" xs={12} sm={6} md={8} lg={8}>
-            <div className="position-relative ">
+            <div
+              className="position-relative "
+              data-aos="zoom-in-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1500"
+              data-aos-once="false"
+            >
               <Image
                 src={active}
                 alt="image"

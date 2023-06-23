@@ -194,6 +194,9 @@ const Projects = () => {
                     <div
                       className="position-relative pe-5 pb-2 pt-3"
                       style={{ height: "700px", width: "100%" }}
+                      data-aos="fade-left"
+                      data-aos-once="false"
+                      data-aos-duration="1500"
                     >
                       <Image
                         src={items.image}
@@ -210,6 +213,9 @@ const Projects = () => {
                     sm={10}
                     md={5}
                     lg={5}
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                    data-aos-once="false"
                     className="position-absolute   ps-3 top-25  "
                     style={{ top: "5%", right: "0%" }}
                   >
