@@ -59,12 +59,11 @@ p {
   font-size: var(--step-6) !important;
 }
 
-/* .headingline {
-  border-left: solid #d42626;
-  border-width: thin;
-  width: 100px;
-  height: 2px;
-} */
+.headingline {
+  border-bottom: 2px solid #a18565;
+
+  width: 120px;
+}
 
 .df-bottombar-branding {
   display: none;
