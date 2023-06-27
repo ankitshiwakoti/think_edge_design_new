@@ -175,11 +175,11 @@ const Projects = () => {
 
           <div className="d-flex  justify-content-end col-md-6 col-lg-6 col-sm-6 col-xs-12">
             <div
-              className="projectbutton p-2 ps-3 pt-2 border border-1 rounded-0   btn "
+              className="projectbutton p-2  border border-1 rounded-0   btn "
               style={{ background: "transparent" }}
             >
-              <span className="p-2 pt-5">VIEW ALL PROJECTS</span>
-              <span className="p-2 pt-5">
+              <span className="ps-2 ">VIEW ALL PROJECTS</span>
+              <span className=" ps-2">
                 <i class="bi bi-arrow-right"></i>
               </span>
             </div>
