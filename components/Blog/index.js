@@ -39,12 +39,12 @@ const Blog = () => {
           </div>
 
           <div className="d-flex justify-content-end col-md-6 col-lg-6 col-sm-6 col-xs-12">
-            <button className="blogbtn  rounded-0  shadow-sm btn btn-white">
-              VIEW ALL PROJECTS
+            <div className="projectbutton p-2  rounded-0  shadow-sm btn btn-white">
+              <span className="text-uppercase p-2"> VIEW ALL Blogs </span>
               <span className="p-2 ">
                 <i class="bi bi-arrow-right"></i>
               </span>
-            </button>
+            </div>
           </div>
         </Row>
 
@@ -82,12 +82,12 @@ const Blog = () => {
                   </h4>
                   <p class="pt-2 blogtext fw-normal">{items.body}</p>
                   <div className="pt-4 pb-3">
-                    <button className=" blogbtn btn  shadow-sm border border-black border-opacity-25 text-primary rounded-0">
-                      LEARN MORE
+                    <div className="projectbutton btn  shadow-sm border border-black border-opacity-25 text-primary rounded-0">
+                      <span className="p-2"> LEARN MORE </span>
                       <span className="p-2">
                         <i class="bi bi-arrow-right"></i>
                       </span>
-                    </button>
+                    </div>
                   </div>
                 </div>
               </div>

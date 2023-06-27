@@ -144,24 +144,20 @@ const Hero = () => {
     <section className="hero" id="hero">
       <Container fluid>
         <Row className="">
-          <Col xs={12} sm={12} md={12} lg={12} className="p-0">
+          <Col xs={12} sm={12} md={12} lg={12} className=" p-0 ">
             <div>
               <Slider {...settings}>
                 {data?.map((items, index) => (
                   <div className="position-relative  " key={index}>
-                    <div
-                      className="tryhero position-absolute"
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                      }}
-                    ></div>
+                    <div className="tryhero position-absolute"></div>
                     <div>
                       <Image
                         src={items.img}
                         alt="image"
                         className=""
-                        style={{ width: "100%", height: "800px" }}
+                        height={800}
+                        style={{ width: "100%" }}
+
                         // fill
                       />
                     </div>

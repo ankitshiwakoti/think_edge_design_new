@@ -101,7 +101,7 @@ const Form1 = () => {
             className=" pe-0 px-4 py-md-3 py-2 formContainer inputfs w-100"
           >
             {/* TextField Inputs */}
-            <div className="d-flex justify-content-between">
+            <div className="d-grid ">
               <Form.Group
                 className="  mt-2 pb-0 mt-md-0 py-xl-2 w-100 me-3"
                 style={{ color: "#525252", backgroundColor: "#F2F1EB" }}
@@ -123,7 +123,7 @@ const Form1 = () => {
                   component={TextError}
                 />
               </Form.Group>
-              <div className="mt-2 pb-0 mt-md-0 pt-2">
+              <div className=" mt-2 pb-0 mt-md-0 pt-2">
                 <lable
                   className=""
                   style={{
@@ -203,7 +203,7 @@ const Form1 = () => {
             {/* Submit Button */}
             <div className="d-flex justify-content-start mt-4 ">
               <div
-                className=" blogbtn btn rounded-0 bordertry "
+                className=" projectbutton btn rounded-0 bordertry "
                 type="submit"
                 disabled={loading}
                 style={{

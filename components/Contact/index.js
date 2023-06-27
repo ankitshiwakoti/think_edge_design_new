@@ -9,7 +9,7 @@ const Contact = () => {
       <Container className="">
         <Row className="d-flex pt-5 justify-content-between">
           <h2
-            className="ps-0 fw-normal text-uppercase"
+            className=" ps-lg-0 ps-md-0 ps-2 fw-normal text-uppercase"
             style={{ color: "#212121" }}
           >
             Contact us
@@ -19,7 +19,7 @@ const Contact = () => {
             sm={12}
             md={6}
             lg={6}
-            className="p-0"
+            className="p-md-0 p-lg-0"
             data-aos="fade-right"
             data-aos-easing="liner"
             data-aos-duration="2000"
@@ -45,10 +45,10 @@ const Contact = () => {
           </Col>
           <Col xs={12} sm={12} md={6} lg={6}>
             <div
-              className="pt-2 pb-5"
-              data-aos="fade-left"
-              data-aos-easing="liner"
-              data-aos-duration="2000"
+              className="pt-2 pb-5 ps-0 p-3"
+              // data-aos="fade-left"
+              // data-aos-easing="liner"
+              // data-aos-duration="2000"
             >
               <Form />
             </div>

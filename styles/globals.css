@@ -99,7 +99,7 @@ p {
   transform: rotate(-130deg) translateX(290px);
 }
 
-div:hover::before {
+.divbutton:hover::before {
   transform: rotate(-155deg) translate(-40px, 50px);
 }
 
@@ -605,3 +605,37 @@ dl {
   border-width: 1px;
   border-color: #525252; */
 }
+
+/* project start */
+
+.projectbutton {
+  position: relative;
+  overflow: hidden !important;
+}
+
+.projectbutton::before {
+  content: "";
+
+  position: absolute;
+  height: 370px;
+  width: 240px;
+  background: #a18565;
+  box-shadow: 0 0 10px white;
+  filter: blur(1px);
+  opacity: 0.6;
+  top: -45px;
+  right: 100px;
+  transition: 0.9s;
+  transform: rotate(-130deg) translateX(290px);
+}
+
+.projectbutton:hover::before {
+  transform: rotate(-155deg) translate(-40px, 50px);
+}
+
+.projectline {
+  border-bottom: 3px solid #a18565;
+
+  width: 170px;
+}
+/* project end */

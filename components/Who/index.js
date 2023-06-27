@@ -44,13 +44,13 @@ const Who = () => {
                   know who will live in our homes and to translate their
                   physical and emotional desires into tailored interiors.
                 </p>
-                <button className=" mt-4 blogbtn whobtn shadow-sm  btn border border-black-subtle rounded-0">
-                  GET TO KNOW US
-                  <span className="p-2 ">
+                <div className=" mt-4 p-2 projectbutton shadow-sm  btn border border-black-subtle rounded-0">
+                  <span className="p-2 pt-4"> GET TO KNOW US </span>
+                  <span className="p-2 pt-4 ">
                     {" "}
                     <i class="bi bi-arrow-right"></i>
                   </span>
-                </button>
+                </div>
               </div>
             </div>
             <div className="mt-4 ">

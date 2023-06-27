@@ -1,16 +1,16 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 
-const Aboutus = () => {
+const Portfolio = () => {
   return (
     <section>
       <Container>
         <Row className="mt-5 pt-5">
-          <h2>This is About us Page</h2>
+          <h2>this is portfolio page</h2>
         </Row>
       </Container>
     </section>
   );
 };
 
-export default Aboutus;
+export default Portfolio;

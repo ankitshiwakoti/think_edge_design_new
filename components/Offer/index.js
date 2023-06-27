@@ -62,10 +62,10 @@ const Offer = () => {
             sm={6}
             md={4}
             lg={4}
-            data-aos="flip-right"
-            data-aos-easing="linear"
-            data-aos-duration="2000"
-            data-aos-once="false"
+            // data-aos="flip-right"
+            // data-aos-easing="linear"
+            // data-aos-duration="2000"
+            // data-aos-once="false"
           >
             <Accordion defaultActiveKey="0" bsPrefix="faqAccordion" flush>
               {data?.map((items, index) => (

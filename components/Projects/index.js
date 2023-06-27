@@ -170,18 +170,19 @@ const Projects = () => {
         <Row className="my-5">
           <div className="p-0 justify-content-start col-md-6 col-lg-6 col-sm-6 col-xs-12">
             <h2 className=" fw-normal text-uppercase">our latest projects </h2>
+            <div className="projectline "></div>
           </div>
 
-          <div className="d-flex ]justify-content-end col-md-6 col-lg-6 col-sm-6 col-xs-12">
-            <button
-              className="blogbtn pe-3 ps-4  border border-1 rounded-0   btn "
+          <div className="d-flex  justify-content-end col-md-6 col-lg-6 col-sm-6 col-xs-12">
+            <div
+              className="projectbutton p-2 ps-3 pt-2 border border-1 rounded-0   btn "
               style={{ background: "transparent" }}
             >
-              VIEW ALL PROJECTS
-              <span className="p-2 ps-3 ">
+              <span className="p-2 pt-5">VIEW ALL PROJECTS</span>
+              <span className="p-2 pt-5">
                 <i class="bi bi-arrow-right"></i>
               </span>
-            </button>
+            </div>
           </div>
           {/* <h2 className=" fw-medium text-uppercase mb-4">
             our latest projects
@@ -255,9 +256,9 @@ const Projects = () => {
                           5. {items.l5}
                         </p>
                       </div>
-                      <div className="pb-4" style={{ marginBottom: "60px" }}>
-                        <button
-                          className="mt-5 text-center  btn  border  border-1 border-primary border-opacity-25  rounded-0"
+                      <div className="pb-4 " style={{ marginBottom: "60px" }}>
+                        <div
+                          className="mt-5 text-center projectbutton  btn  border  border-1 border-primary border-opacity-25  rounded-0"
                           style={{
                             color: "#212121",
                             background: "transparent",
@@ -267,7 +268,7 @@ const Projects = () => {
                           <span className="p-3 ">
                             <i class="bi bi-arrow-right"></i>
                           </span>
-                        </button>
+                        </div>
                       </div>
                     </div>
                   </Col>
