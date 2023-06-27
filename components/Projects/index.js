@@ -172,7 +172,7 @@ const Projects = () => {
             <h2 className=" fw-normal text-uppercase">our latest projects </h2>
           </div>
 
-          <div className="d-flex justify-content-end col-md-6 col-lg-6 col-sm-6 col-xs-12">
+          <div className="d-flex ]justify-content-end col-md-6 col-lg-6 col-sm-6 col-xs-12">
             <button
               className="blogbtn pe-3 ps-4  border border-1 rounded-0   btn "
               style={{ background: "transparent" }}

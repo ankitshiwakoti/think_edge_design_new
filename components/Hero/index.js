@@ -190,7 +190,7 @@ const Hero = () => {
                       </h1>
 
                       <div
-                        className="mt-5 text-center herobtn btnhover btn shadow-sm border border-white text-white border-opacity-25 text-primary rounded-0"
+                        className="mt-5 text-center herobtn divbutton btn shadow-sm border border-white text-white border-opacity-25 text-primary rounded-0"
                         style={{ color: "white" }}
                       >
                         <span className="p-2 "> LEARN MORE</span>

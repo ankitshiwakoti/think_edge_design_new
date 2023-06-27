@@ -151,8 +151,12 @@ const Header = () => {
               <form>
                 {" "}
                 <div
-                  className=" p-2 nabbtnhov  btn border border-1  rounded-0 "
-                  style={{ background: "transparent", color: "#212121" }}
+                  className=" divbutton p-2   btn border border-1  rounded-0 "
+                  style={{
+                    background: "transparent",
+                    color: "#212121",
+                    overflow: "hidden",
+                  }}
                 >
                   <span className="p-3 " style={{}}>
                     CONTACT US
