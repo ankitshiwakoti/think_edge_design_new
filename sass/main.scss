@@ -4,6 +4,7 @@
 $primary:#212121;
 $secondary: #525252;
 $bod:#895D2B;
+$buttons:#A18565;
 $tertiary: #ABABAB;
 $white:#FAFAFA;
 $lightwhite:#F2F2F2;
@@ -14,6 +15,7 @@ $pagination-color: none;
 $pagination-bg: none;
 $pagination-border-color: none;
 $navcolor: #f30c0c;
+$buttontext:#FFFEFE;
 
 
 @import '../node_modules/bootstrap/scss/_functions';
@@ -22,6 +24,9 @@ $navcolor: #f30c0c;
 $custom-theme-colors: (
   'warninglight': $warninglight,
   'primarydark': $primarydark,
+  'buttons':$buttons,
+  'secondary':$secondary,
+  'buttontext':$buttontext,
 );
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
