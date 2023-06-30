@@ -70,33 +70,48 @@ const Header = () => {
                   </a>
                   <div className=" dropdown-content dropdown-menu  rounded-0 p-0">
                     <div className="border-bottom">
-                      <a className=" drophov dropdown-item" href="/services">
+                      <a
+                        className=" drophov dropdown-item"
+                        href="/Service/BIM-modeling"
+                      >
                         BIM Modelling
                       </a>
                     </div>
                     <div className="border-bottom">
-                      <a className=" drophov dropdown-item" href="/services">
-                        BIM Modelling
+                      <a
+                        className=" drophov dropdown-item"
+                        href="/Service/AutoCAD"
+                      >
+                        AutoCAD
                       </a>
                     </div>
                     <div className="border-bottom">
-                      <a className="drophov dropdown-item" href="/services">
-                        BIM Modelling
+                      <a
+                        className="drophov dropdown-item"
+                        href="/Service/Interior"
+                      >
+                        Interior Designer
                       </a>
                     </div>
                     <div className="border-bottom">
-                      <a className="drophov dropdown-item" href="/services">
-                        BIM Modelling
+                      <a className="drophov dropdown-item" href="/Service/3D">
+                        2D & 3D Modeling
                       </a>
                     </div>
                     <div className="border-bottom">
-                      <a className="drophov dropdown-item" href="/services">
-                        BIM Modelling
+                      <a
+                        className="drophov dropdown-item"
+                        href="/Service/Landscape"
+                      >
+                        Landscape Concept
                       </a>
                     </div>
                     <div className="border-bottom">
-                      <a className="drophov dropdown-item" href="/services">
-                        BIM Modelling
+                      <a
+                        className="drophov dropdown-item"
+                        href="/Service/Estimation"
+                      >
+                        Estimation: Strategic Resource Planning
                       </a>
                     </div>
                   </div>

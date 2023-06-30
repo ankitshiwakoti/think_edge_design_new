@@ -5,8 +5,20 @@ import banner from "../public/assets/portfolio/banner.png";
 import Portfolios from "@/components/Portfolio";
 import Bim11 from "../public/assets/portfolio/Bim1-1.png";
 import Bim12 from "../public/assets/portfolio/Bim1-2.png";
+import Bim21 from "../public/assets/portfolio/Bim2-1.png";
+import Bim22 from "../public/assets/portfolio/Bim2-2.png";
+import Bim31 from "../public/assets/portfolio/Bim3-1.png";
+import Bim32 from "../public/assets/portfolio/Bim3-2.png";
+import Bim41 from "../public/assets/portfolio/Bim4-1.png";
+import Bim42 from "../public/assets/portfolio/Bim4-2.png";
 import Auto11 from "../public/assets/portfolio/Auto1-1.png";
 import Auto12 from "../public/assets/portfolio/Auto1-2.png";
+import Auto21 from "../public/assets/portfolio/Auto2-1.png";
+import Auto22 from "../public/assets/portfolio/Auto2-2.png";
+import Auto31 from "../public/assets/portfolio/Auto3-1.png";
+import Auto32 from "../public/assets/portfolio/Auto3-2.png";
+import Auto41 from "../public/assets/portfolio/Auto4-1.png";
+import Auto42 from "../public/assets/portfolio/Auto4-2.png";
 
 const services = [
   {
@@ -29,7 +41,7 @@ const services = [
 
   {
     id: 4,
-    title: "3D Modeling and Rendering/ Façade Design",
+    title: "3D Modeling and Rendering",
     send: "3D",
   },
 
@@ -53,29 +65,25 @@ const BIM = [
     image2: Bim12,
   },
   {
-    id: 1,
-    image1: Bim11,
-    image2: Bim12,
-  },
-  {
     id: 2,
-    image1: Bim11,
-    image2: Bim12,
+    image1: Bim21,
+    image2: Bim22,
   },
   {
     id: 3,
-    image1: Bim11,
-    image2: Bim12,
+    image1: Bim31,
+    image2: Bim32,
   },
+
   {
     id: 4,
-    image1: Bim11,
-    image2: Bim12,
+    image1: Bim41,
+    image2: Bim42,
   },
   {
     id: 5,
-    image1: Bim11,
-    image2: Bim12,
+    image1: Bim21,
+    image2: Bim22,
   },
 ];
 
@@ -87,19 +95,19 @@ const AutoCAD = [
   },
   {
     id: 2,
-    image1: Bim11,
-    image2: Bim12,
+    image1: Auto21,
+    image2: Auto22,
   },
   {
     id: 3,
-    image1: Auto11,
-    image2: Auto12,
+    image1: Auto31,
+    image2: Auto32,
   },
 
   {
     id: 4,
-    image1: Bim11,
-    image2: Bim12,
+    image1: Auto41,
+    image2: Auto42,
   },
   {
     id: 5,
@@ -111,10 +119,7 @@ const AutoCAD = [
 const Portfolio = () => {
   const [active, setActive] = useState("BIM modeling");
   const [send, setSend] = useState("BIM");
-  const [limit, setLimit] = useState(4);
-  const handleShowMore = () => {
-    setLimit(limit + 4);
-  };
+
   console.log(send);
   return (
     <section>
@@ -122,7 +127,11 @@ const Portfolio = () => {
         <Row className="">
           <div className="p-0 col-md-12  col-lg-12 position-relative">
             <div>
-              <Image alt="portfolio banner" src={banner} className=" w-100" />
+              <Image
+                alt="portfolio banner"
+                src={banner}
+                className="img-fluid w-100"
+              />
             </div>
             <div
               className="position-absolute  top-50 start-50 translate-middle"
@@ -148,7 +157,7 @@ const Portfolio = () => {
             >
               <button
                 style={{ border: " 1px solid var(--secondary-black, #ABABAB)" }}
-                className={`w-100  p-1  rounded-0 projectbutton ${
+                className={`w-100 fw-medium  p-1  rounded-0 projectbutton ${
                   active === item?.title
                     ? "bg-buttons text-buttontext fw-normal "
                     : "bg-transparent text-dark "
@@ -164,6 +173,8 @@ const Portfolio = () => {
         </Row>
         {send === "BIM" ? <Portfolios data={BIM} /> : null}
         {send === "AutoCAD" ? <Portfolios data={AutoCAD} /> : null}
+        {send === "Interior" ? <Portfolios data={BIM} /> : null}
+        {send === "3D" ? <Portfolios data={AutoCAD} /> : null}
       </Container>
     </section>
   );

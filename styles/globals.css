@@ -639,3 +639,11 @@ dl {
   width: 170px;
 }
 /* project end */
+
+/* service slug page */
+.serviceslug .headingline {
+  border-bottom: 2px solid #a18565;
+  padding: 0;
+  width: 100px;
+}
+/* service slug page end */

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { Row } from "react-bootstrap";
 import Bim11 from "../../public/assets/portfolio/Bim1-1.png";
 import Bim12 from "../../public/assets/portfolio/Bim1-2.png";
@@ -85,21 +85,25 @@ const servi = {
 };
 
 const Portfolios = ({ data }) => {
+  const [limit, setLimit] = useState(4);
+  const handleShowMore = () => {
+    setLimit(limit + 4);
+  };
   console.log("this", data);
   //   const name = servi.BIM;
   //   console.log("name is ", name);
   return (
     <Row>
-      {data.map((items, index) => (
+      {data?.slice(0, limit)?.map((items, index) => (
         <div
           key={items.id}
-          className={`col-md-12 mt-5 col-lg-12 ${
+          className={`col-md-12 mt-5 col-lg-12  ${
             index % 2 === 0
-              ? "d-flex flex-row gap-1 "
-              : "d-flex flex-row-reverse gap-1"
+              ? "d-sm-flex d-grid flex-row gap-1 "
+              : "d-sm-flex d-grid  flex-row-reverse gap-1"
           }`}
         >
-          <div className="col-md-7 col-lg-7">
+          <div className="col-md-7 col-lg-7 col-sm-12">
             <Image
               src={items.image1}
               className="img-fluid"
@@ -108,7 +112,11 @@ const Portfolios = ({ data }) => {
               height={0}
             />
           </div>
-          <div className="col-md-5 p-3 pt-0 pb-0 col-lg-5">
+          <div
+            className={`col-md-5 p-0 col-sm-12 col-lg-5 ${
+              index % 2 === 0 ? "ps-3 " : "pe-3"
+            }`}
+          >
             <Image
               src={items.image2}
               className="img-fluid"
@@ -116,13 +124,17 @@ const Portfolios = ({ data }) => {
               width={0}
               height={0}
             />
-            <div className="mt-3">
-              <h3 className="fw-medium">MODERN CONTEMPORARY HOUSE</h3>
-              <p className="fw-normal">RESIDENTIAL </p>
-              <div className="pt-3 pb-2">
-                <div className="projectbutton btn  shadow-sm border border-black border-opacity-25 text-primary rounded-0">
-                  <span className="p-2"> LEARN MORE </span>
-                  <span className="p-2">
+            <div className="mt-4 ">
+              <h3 className="fw-normal">MODERN CONTEMPORARY HOUSE</h3>
+              <h4 className="fw-medium pb-1">RESIDENTIAL </h4>
+              <div className="pt-4">
+                {" "}
+                <div className="projectbutton  btn p-2 shadow-sm border border-black border-opacity-25 text-primary rounded-0">
+                  <span className="p-2 fw-medium" style={{ fontSize: "16px" }}>
+                    {" "}
+                    LEARN MORE{" "}
+                  </span>
+                  <span className="p-1 ps-1">
                     <i class="bi bi-arrow-right"></i>
                   </span>
                 </div>
@@ -131,6 +143,18 @@ const Portfolios = ({ data }) => {
           </div>
         </div>
       ))}
+
+      {data?.length > limit && (
+        <div className="d-flex justify-content-center mt-5">
+          <button
+            className="btn btn-secondary px-5 py-3 fw-normal"
+            onClick={handleShowMore}
+          >
+            Load More
+            <i className="bi bi-arrow-right ms-2" />
+          </button>
+        </div>
+      )}
     </Row>
   );
 };
