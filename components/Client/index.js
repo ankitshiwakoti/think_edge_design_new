@@ -9,6 +9,7 @@ import who4 from "../../public/assets/whosecond.jpg";
 import Slider from "react-slick";
 import profile from "../../public/assets/client/profile.png";
 import client1 from "../../public/assets/client/second.png";
+import bg from "../../public/assets/Clientbg.png";
 
 const data = [
   {
@@ -142,10 +143,17 @@ const Client = () => {
     ],
   };
   return (
-    <section className="client pt-5">
+    <section
+      className="client py-5"
+      style={{
+        backgroundImage: `url(${bg.src})`,
+        width: "100%",
+        height: "100%",
+      }}
+    >
       <Container className=" p-0">
         <div className=" mt-3 position">
-          <h2>WHAT OUR CLIENT SAY</h2>
+          <h2 className="text-white">WHAT OUR CLIENT SAY</h2>
         </div>
         <Row className="my-5 position-relative ">
           <Col

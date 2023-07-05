@@ -3,9 +3,9 @@ import React from "react";
 
 const Header = () => {
   return (
-    <section className=" mb-5 pb-3 shadow-lg">
+    <section className="  " style={{ position: "static" }}>
       <nav
-        className="scroll-bounce me-auto navbar shadow navbar-expand-lg p-3 fixed-top"
+        className=" mx-auto  navbar  navbar-expand-lg p-4  fixed-top "
         style={{ backgroundColor: "#FFFEFE" }}
       >
         <div className="container  p-0">
@@ -164,7 +164,7 @@ const Header = () => {
                   </a>
                 </div>
               </div>
-              <form>
+              <form className="d-flex gap-2">
                 {" "}
                 <div
                   className=" divbutton p-2   btn border border-1  rounded-0 "
@@ -175,7 +175,19 @@ const Header = () => {
                   }}
                 >
                   <span className="p-3 " style={{}}>
-                    CONTACT US
+                    REQUEST A DEMO
+                  </span>
+                </div>
+                <div
+                  className=" divbutton p-2 text-white  btn border border-1  rounded-0 "
+                  style={{
+                    background: "#A18565",
+                    color: "#212121",
+                    overflow: "hidden",
+                  }}
+                >
+                  <span className="p-3 " style={{}}>
+                    GET IN TOUCH{" "}
                   </span>
                 </div>
               </form>

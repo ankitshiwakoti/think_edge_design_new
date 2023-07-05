@@ -16,6 +16,8 @@ $pagination-bg: none;
 $pagination-border-color: none;
 $navcolor: #f30c0c;
 $buttontext:#FFFEFE;
+$designactive:#895D2B;
+$designnonactive:#FFF;
 
 
 @import '../node_modules/bootstrap/scss/_functions';
@@ -27,6 +29,9 @@ $custom-theme-colors: (
   'buttons':$buttons,
   'secondary':$secondary,
   'buttontext':$buttontext,
+  'designactive':$designactive,
+  'designnonactive':$designnonactive,
+
 );
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);

@@ -279,6 +279,13 @@ p {
 
   color: #525252;
 } */
+
+.designline {
+  border-bottom: 3px solid #fffefe;
+  padding: 0;
+  width: 120px;
+}
+
 .design h1 {
   color: #fffefe;
   font-size: var(--step-11) !important;
@@ -333,6 +340,22 @@ p {
 }
 
 /* offer Section     */
+
+.ourservicestext {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* fallback */
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.ourserviceline {
+  border-bottom: 3px solid #a18565;
+  padding: 0;
+  width: 120px;
+}
+
 .offer {
   cursor: pointer;
 }

@@ -25,7 +25,7 @@ const data = [
 ];
 const Who = () => {
   return (
-    <section className="my-5 py-5">
+    <section className="my-5 pt-5">
       <Container className="">
         <Row className="">
           <h2 className="p-0 fw-medium text-uppercase">who we are?</h2>
