@@ -51,8 +51,7 @@ const Design = () => {
             {design?.map((items, index) => (
               <Col xs={12} sm={6} md={6} lg={3} key={index} className="">
                 <div
-                  class=""
-                  className={`card py-5 text-center rounded-0 ${
+                  className={`card py-5 text-center  rounded-0 ${
                     active === items.title
                       ? "bg-designactive text-white "
                       : "bg-designnonactive"
