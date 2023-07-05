@@ -96,7 +96,7 @@ const Form1 = () => {
               width: "97rem",
               borderRadius: "10px",
               Color: "#ABABAB",
-              backgroundColor: "#F2F1EB",
+              backgroundColor: "transparent",
             }}
             className=" pe-0 px-4 py-md-3 py-2 formContainer inputfs w-100"
           >
@@ -104,7 +104,7 @@ const Form1 = () => {
             <div className="d-grid ">
               <Form.Group
                 className="  mt-2 pb-0 mt-md-0 py-xl-2 w-100 me-3"
-                style={{ color: "#525252", backgroundColor: "#F2F1EB" }}
+                style={{ color: "#525252", backgroundColor: "transparent" }}
               >
                 <lable htmlFor="name">Name</lable>
                 <FastField
@@ -115,7 +115,7 @@ const Form1 = () => {
                   name="textField[0].fullName"
                   style={{
                     color: "#ababab",
-                    backgroundColor: "#F2F1EB",
+                    backgroundColor: "transparent",
                   }}
                 />
                 <ErrorMessage

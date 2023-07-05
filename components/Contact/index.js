@@ -1,11 +1,19 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import bg from "../../public/assets/Contactbg.png";
 
 import Form from "../Form";
 
 const Contact = () => {
   return (
-    <section className="contact" style={{ backgroundColor: "#F2F1EB" }}>
+    <section
+      className="contact"
+      style={{
+        backgroundImage: `url(${bg.src})`,
+        width: "100%",
+        height: "100%",
+      }}
+    >
       <Container className="">
         <Row className="d-flex pt-5 justify-content-between">
           <h2
