@@ -47,7 +47,7 @@ const Header = () => {
               ></button>
             </div>
             <div className="offcanvas-body">
-              <div className="navbar-nav justify-content-center flex-grow-1 gap-2 pe-3">
+              <div className="navbar-nav justify-content-end flex-grow-1 gap-2 pe-3">
                 <div className="nav-item">
                   <a className="nav-link " aria-current="page" href="/">
                     <span className="navhov pb-1" style={{ color: "#ABABAB" }}>

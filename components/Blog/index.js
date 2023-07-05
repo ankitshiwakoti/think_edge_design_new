@@ -31,7 +31,7 @@ const data = [
 
 const Blog = () => {
   return (
-    <section>
+    <section className="py-5">
       <Container className="p-0">
         <Row className="d-flex justify-content-between mb-5">
           <div className=" justify-content-start col-md-6 col-lg-6 col-sm-6 col-xs-12">
