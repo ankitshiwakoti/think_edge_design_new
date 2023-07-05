@@ -20,7 +20,7 @@ const Header = () => {
             <span className=""> Think Edge Design</span>
           </a>
           <button
-            className="navbar-toggler"
+            className=" navbar-toggler"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
