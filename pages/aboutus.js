@@ -7,7 +7,7 @@ const data = [
     id: 1,
     photo: '/assets/aboutus/About1.png',
     name: "Anil keshari",
-    role: "CEO",
+    role: "CEO ",
   },
   {
     id: 2,
