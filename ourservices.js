@@ -1,9 +1,9 @@
-import service1 from "/public/assets/ourservices/service1.png";
-import service2 from "/public/assets/ourservices/service2.png";
-import service3 from "/public/assets/ourservices/service3.png";
-import service4 from "/public/assets/ourservices/service4.png";
-import service5 from "/public/assets/ourservices/service5.png";
-import service6 from "/public/assets/ourservices/service6.png";
+import service1 from "/assets/ourservices/Service1.png";
+import service2 from "/assets/ourservices/Service2.png";
+import service3 from "/assets/ourservices/Service3.png";
+import service4 from "/assets/ourservices/Service4.png";
+import service5 from "/assets/ourservices/Service5.png";
+import service6 from "/assets/ourservices/Service6.png";
 
 export const data = [
   {
