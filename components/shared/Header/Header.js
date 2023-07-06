@@ -68,39 +68,42 @@ const Header = () => {
                       SERVICES <i className="bi bi-chevron-down"> </i>
                     </span>
                   </a>
-                  <div className=" dropdown-content dropdown-menu  rounded-0 p-0">
-                    <div className="border-bottom">
+                  <div className=" dropdown-content dropdown-menu bg-white  rounded-0 p-0">
+                    <div className="border-bottom ">
                       <a
-                        className=" drophov dropdown-item"
+                        className=" drophov dropdown-item bg-designnonactive py-3"
                         href="/Service/BIM-modeling"
                       >
                         BIM Modelling
                       </a>
                     </div>
-                    <div className="border-bottom">
+                    <div className="border-bottom ">
                       <a
-                        className=" drophov dropdown-item"
+                        className=" drophov dropdown-item bg-designnonactive py-3"
                         href="/Service/AutoCAD"
                       >
                         AutoCAD
                       </a>
                     </div>
-                    <div className="border-bottom">
+                    <div className="border-bottom ">
                       <a
-                        className="drophov dropdown-item"
+                        className="drophov dropdown-item bg-designnonactive py-3"
                         href="/Service/Interior"
                       >
                         Interior Designer
                       </a>
                     </div>
                     <div className="border-bottom">
-                      <a className="drophov dropdown-item" href="/Service/3D">
+                      <a
+                        className="drophov dropdown-item bg-designnonactive py-3"
+                        href="/Service/3D"
+                      >
                         2D & 3D Modeling
                       </a>
                     </div>
                     <div className="border-bottom">
                       <a
-                        className="drophov dropdown-item"
+                        className="drophov dropdown-item bg-designnonactive py-3"
                         href="/Service/Landscape"
                       >
                         Landscape Concept
@@ -108,7 +111,7 @@ const Header = () => {
                     </div>
                     <div className="border-bottom">
                       <a
-                        className="drophov dropdown-item"
+                        className="drophov dropdown-item bg-designnonactive py-3"
                         href="/Service/Estimation"
                       >
                         Estimation: Strategic Resource Planning
@@ -149,19 +152,58 @@ const Header = () => {
                     </div>
                   </div>
                 </div>
-                <div className="nav-item">
+                {/* <div className="nav-item">
                   <Link className="nav-link" href="/Portfolio">
                     <span className="navhov pb-1" style={{ color: "#ABABAB" }}>
                       PORTFOLIO
                     </span>
                   </Link>
-                </div>
-                <div className="nav-item">
+                </div> */}
+                {/* <div className="nav-item">
                   <a className="nav-link" href="/aboutus">
                     <span className="navhov pb-1" style={{ color: "#ABABAB" }}>
                       ABOUT US
                     </span>
                   </a>
+                </div> */}
+                <div className="nav-item dropdown">
+                  <a
+                    className="nav-link navhov "
+                    href="/services"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span className=" pb-1">
+                      ABOUT US <i className="bi bi-chevron-down"> </i>
+                    </span>
+                  </a>
+                  <div className=" dropdown-content dropdown-menu bg-white  rounded-0 p-0">
+                    <div className="border-bottom ">
+                      <a
+                        className=" drophov dropdown-item bg-designnonactive py-3"
+                        href="/aboutus"
+                      >
+                        ABOUT OUR COMPANY
+                      </a>
+                    </div>
+                    <div className="border-bottom ">
+                      <a
+                        className=" drophov dropdown-item bg-designnonactive py-3"
+                        href="/Team"
+                      >
+                        MEET OUR TEAM
+                      </a>
+                    </div>
+                    <div className="border-bottom ">
+                      <a
+                        className="drophov dropdown-item bg-designnonactive py-3"
+                        href="/Portfolio"
+                      >
+                        PORTFOLIO
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <form className="d-flex gap-2">
@@ -174,9 +216,7 @@ const Header = () => {
                     overflow: "hidden",
                   }}
                 >
-                  <span className="p-3 " style={{}}>
-                    REQUEST A DEMO
-                  </span>
+                  <span className="p-3 ">REQUEST A DEMO</span>
                 </div>
                 <div
                   className=" divbutton p-2 text-white  btn border border-1  rounded-0 "
@@ -186,9 +226,7 @@ const Header = () => {
                     overflow: "hidden",
                   }}
                 >
-                  <span className="p-3 " style={{}}>
-                    GET IN TOUCH{" "}
-                  </span>
+                  <span className="p-3 ">GET IN TOUCH </span>
                 </div>
               </form>
             </div>

@@ -18,6 +18,7 @@ $navcolor: #f30c0c;
 $buttontext:#FFFEFE;
 $designactive:#895D2B;
 $designnonactive:#FFF;
+$viewproject:#FFFCF8;
 
 
 @import '../node_modules/bootstrap/scss/_functions';
@@ -26,11 +27,13 @@ $designnonactive:#FFF;
 $custom-theme-colors: (
   'warninglight': $warninglight,
   'primarydark': $primarydark,
+  'white':$white,
   'buttons':$buttons,
   'secondary':$secondary,
   'buttontext':$buttontext,
   'designactive':$designactive,
   'designnonactive':$designnonactive,
+  'viewproject':$viewproject,
 
 );
 

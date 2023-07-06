@@ -63,27 +63,37 @@ const BIM = [
     id: 1,
     image1: Bim11,
     image2: Bim12,
+    mtitle: "MODERN CONTEMPORARY HOUSE",
+    subtitle: "RESIDENTIAL",
   },
   {
     id: 2,
     image1: Bim21,
     image2: Bim22,
+    mtitle: "MODERN CONTEMPORARY HOUSE",
+    subtitle: "RESIDENTIAL",
   },
   {
     id: 3,
     image1: Bim31,
     image2: Bim32,
+    mtitle: "MODERN CONTEMPORARY HOUSE",
+    subtitle: "RESIDENTIAL",
   },
 
   {
     id: 4,
     image1: Bim41,
     image2: Bim42,
+    mtitle: "MODERN CONTEMPORARY HOUSE",
+    subtitle: "RESIDENTIAL",
   },
   {
     id: 5,
     image1: Bim21,
     image2: Bim22,
+    mtitle: "MODERN CONTEMPORARY HOUSE",
+    subtitle: "RESIDENTIAL",
   },
 ];
 
@@ -92,27 +102,37 @@ const AutoCAD = [
     id: 1,
     image1: Auto11,
     image2: Auto12,
+    mtitle: "MODERN CONTEMPORARY HOUSE",
+    subtitle: "RESIDENTIAL",
   },
   {
     id: 2,
     image1: Auto21,
     image2: Auto22,
+    mtitle: "MODERN CONTEMPORARY HOUSE",
+    subtitle: "RESIDENTIAL",
   },
   {
     id: 3,
     image1: Auto31,
     image2: Auto32,
+    mtitle: "MODERN CONTEMPORARY HOUSE",
+    subtitle: "RESIDENTIAL",
   },
 
   {
     id: 4,
     image1: Auto41,
     image2: Auto42,
+    mtitle: "MODERN CONTEMPORARY HOUSE",
+    subtitle: "RESIDENTIAL",
   },
   {
     id: 5,
     image1: Auto11,
     image2: Auto12,
+    mtitle: "MODERN CONTEMPORARY HOUSE",
+    subtitle: "RESIDENTIAL",
   },
 ];
 

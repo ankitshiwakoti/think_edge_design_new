@@ -12,18 +12,26 @@ const data = [
   {
     id: 1,
     photo: About1,
+    name: "Anil keshari",
+    role: "CEO",
   },
   {
     id: 2,
     photo: About2,
+    name: "Nikil Shrestha",
+    role: "Project Manager",
   },
   {
     id: 3,
     photo: About3,
+    name: "Ankit Shiwakoti",
+    role: "Developer",
   },
   {
     id: 4,
     photo: About4,
+    name: "Nabina Shahi",
+    role: "Designer",
   },
 ];
 
@@ -55,7 +63,7 @@ const Aboutus = () => {
           </div>
         </Row>
       </Container>
-      <Container>
+      <Container className="p-0">
         <Row className="py-5">
           <h2 className="ps-0">ABOUT OUR COMPANY</h2>
           <div className="col-md-12 col-lg-12 p-0">
@@ -83,7 +91,7 @@ const Aboutus = () => {
               construction projects.
             </p>
           </div>
-          <div className="col-md-11 col-lg-11 p-0">
+          <div className="col-md-11 col-lg-11 p-0 ">
             <h3 className="pb-3">Our Aim/ Mission and Value</h3>
             <p className="lh-lg">
               Our Aim is a full service, interior design firm based in Australia
@@ -93,7 +101,7 @@ const Aboutus = () => {
               discerning, international clientele.
             </p>
           </div>
-          <div className="col-md-12 col-lg-12 py-5 p-0">
+          <div className="col-md-12 col-lg-12 py-5 ">
             <Image
               src={Banner2}
               className="img-fluid w-100"
@@ -101,39 +109,38 @@ const Aboutus = () => {
             />
           </div>
           <div className="col-md-12 col-lg-12 p-0">
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between p-3">
               <div className="d-flex justify-content-start">
                 <h2>MEET OUR TEAM</h2>
               </div>
               <div className="d-flex justify-content-end">
                 {" "}
-                <div className="projectbutton  btn p-2 shadow-sm border border-black border-opacity-25 text-primary rounded-0">
-                  <span className="px-2 fw-medium" style={{ fontSize: "16px" }}>
-                    LEARN MORE
+                <div className="projectbutton px-4  btn p-2 shadow-sm border border-black border-opacity-25 text-primary rounded-0">
+                  <span className=" fw-medium" style={{ fontSize: "16px" }}>
+                    VIEW MORE
                   </span>
-                  <span className="p-1 ps-1">
+                  <span className="p-1 ps-2">
                     <i class="bi bi-arrow-right"></i>
                   </span>
                 </div>
               </div>
             </div>
-            <div className="col-md-12 col-lg-12 p-0 d-flex">
+            <div className="col-md-12 col-lg-12  d-flex bg-designnonactive p-0 py-5">
               {data?.map((items, index) => (
-                <div key={index} class="card col-md-3 col-lg-3  ">
-                  <Image
-                    src={items.photo}
-                    className="img-fluid"
-                    alt="card images"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="btn btn-primary">
-                      Go somewhere
-                    </a>
+                <div
+                  className=" col-md-3 col-lg-3  bg-designnonactive p-3"
+                  key={index}
+                >
+                  <div class="card bg-designnonactive border-0 rounded-0">
+                    <Image
+                      src={items.photo}
+                      className="img-fluid"
+                      alt="card images"
+                    />
+                    <div class="card-body text-center bg-designnonactive border-0 rounded-0">
+                      <h2 class=" fw-light">{items.name}</h2>
+                      <h3 class="fw-normal">{items.role}</h3>
+                    </div>
                   </div>
                 </div>
               ))}

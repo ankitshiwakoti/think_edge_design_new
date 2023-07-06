@@ -5,6 +5,7 @@ import Bim11 from "../../public/assets/portfolio/Bim1-1.png";
 import Bim12 from "../../public/assets/portfolio/Bim1-2.png";
 import Auto11 from "../../public/assets/portfolio/Auto1-1.png";
 import Auto12 from "../../public/assets/portfolio/Auto1-2.png";
+import Link from "next/link";
 
 // const initialValues = {
 //   textField: [
@@ -23,31 +24,43 @@ const servi = {
       id: 1,
       image1: "Bim11",
       image2: "Bim12",
+      title: "MODERN CONTEMPORARY HOUSE",
+      subtitle: "RESIDENTIAL",
     },
     {
       id: 1,
       image1: "Bim11",
       image2: "Bim12",
+      title: "MODERNho CONTEMPORARY HOUSE",
+      subtitle: "RESIDENTIAL",
     },
     {
       id: 2,
       image1: "Bim11",
       image2: "Bim12",
+      title: "MODERN CONTEMPORARY HOUSE",
+      subtitle: "RESIDENTIAL",
     },
     {
       id: 3,
       image1: "Bim11",
       image2: "Bim12",
+      title: "MODERN CONTEMPORARY HOUSE",
+      subtitle: "RESIDENTIAL",
     },
     {
       id: 4,
       image1: "Bim11",
       image2: "Bim12",
+      title: "MODERN CONTEMPORARY HOUSE",
+      subtitle: "RESIDENTIAL",
     },
     {
       id: 5,
       image1: "Bim11",
       image2: "Bim12",
+      title: "MODERN CONTEMPORARY HOUSE",
+      subtitle: "RESIDENTIAL",
     },
   ],
   AutoCAD: [
@@ -55,31 +68,43 @@ const servi = {
       id: 1,
       image1: "Auto11",
       image2: "Auto12",
+      title: "MODERN CONTEMPORARY HOUSE",
+      subtitle: "RESIDENTIAL",
     },
     {
       id: 1,
       image1: "Bim11",
       image2: "Bim12",
+      title: "MODERN CONTEMPORARY HOUSE",
+      subtitle: "RESIDENTIAL",
     },
     {
       id: 2,
       image1: "Bim11",
       image2: "Bim12",
+      title: "MODERN CONTEMPORARY HOUSE",
+      subtitle: "RESIDENTIAL",
     },
     {
       id: 3,
       image1: "Bim11",
       image2: "Bim12",
+      title: "MODERN CONTEMPORARY HOUSE",
+      subtitle: "RESIDENTIAL",
     },
     {
       id: 4,
       image1: "Bim11",
       image2: "Bim12",
+      title: "MODERN CONTEMPORARY HOUSE",
+      subtitle: "RESIDENTIAL",
     },
     {
       id: 5,
       image1: "Bim11",
       image2: "Bim12",
+      title: "MODERN CONTEMPORARY HOUSE",
+      subtitle: "RESIDENTIAL",
     },
   ],
 };
@@ -125,19 +150,26 @@ const Portfolios = ({ data }) => {
               height={0}
             />
             <div className="mt-4 ">
-              <h3 className="fw-normal">MODERN CONTEMPORARY HOUSE</h3>
-              <h4 className="fw-medium pb-1">RESIDENTIAL </h4>
+              <h3 className="fw-normal">{items.mtitle}</h3>
+              <h4 className="fw-medium pb-1">{items.subtitle} </h4>
               <div className="pt-4">
-                {" "}
-                <div className="projectbutton  btn p-2 shadow-sm border border-black border-opacity-25 text-primary rounded-0">
-                  <span className="p-2 fw-medium" style={{ fontSize: "16px" }}>
-                    {" "}
-                    LEARN MORE{" "}
-                  </span>
-                  <span className="p-1 ps-1">
-                    <i class="bi bi-arrow-right"></i>
-                  </span>
-                </div>
+                <Link
+                  style={{ textDecoration: "none" }}
+                  href="/Projects/Modern"
+                >
+                  {" "}
+                  <div className="projectbutton  btn p-2 shadow-sm border border-black border-opacity-25 text-primary rounded-0">
+                    <span
+                      className="p-2 fw-medium"
+                      style={{ fontSize: "16px" }}
+                    >
+                      VIEW PROJECTS
+                    </span>
+                    <span className="p-1 ps-1">
+                      <i class="bi bi-arrow-right"></i>
+                    </span>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
