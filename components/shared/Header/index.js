@@ -5,7 +5,7 @@ import TopHeader from "./TopHeader";
 const Navbar = () => {
   return (
     <>
-      <TopHeader />
+      {/* <TopHeader /> */}
       <Header />
     </>
   );

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function TopHeader() {
   return (
-    <header className="" style={{ position: "sticky" }}>
+    <header className="">
       <section className="d-flex justify-content-between align-items-center py-1 bg-light">
         <Container>
           <Row className="d-flex mx-auto align-items-center">
@@ -18,7 +18,6 @@ function TopHeader() {
                   +61 482 070 864
                 </Link>
               </span>{" "}
-              &nbsp;|&nbsp;{" "}
               <span>
                 <Link
                   className="navhov"

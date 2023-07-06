@@ -32,10 +32,8 @@ const Contact = () => {
             data-aos-easing="liner"
             data-aos-duration="2000"
           >
-            <div className="mt-5 fw-light" style={{ color: "#525252" }}>
-              <h2 className=" mb-0 fw-light " style={{ color: "#525252" }}>
-                Have a projects?
-              </h2>
+            <div className="mt-5 fw-light text-light">
+              <h2 className=" mb-0 fw-light text-light ">Have a projects?</h2>
               <h2 className="fw-light">Lets make great things!</h2>
             </div>
             <div className="mt-5">
