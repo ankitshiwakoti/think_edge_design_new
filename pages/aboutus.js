@@ -1,35 +1,29 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import Banner1 from "../public/assets/aboutus/banner1.png";
-import Banner2 from "../public/assets/aboutus/banner2.png";
-import About1 from "../public/assets/aboutus/About1.png";
-import About2 from "../public/assets/aboutus/About2.png";
-import About3 from "../public/assets/aboutus/About3.png";
-import About4 from "../public/assets/aboutus/About4.png";
 import Image from "next/image";
 
 const data = [
   {
     id: 1,
-    photo: About1,
+    photo: '/assets/aboutus/About1.png',
     name: "Anil keshari",
     role: "CEO",
   },
   {
     id: 2,
-    photo: About2,
+    photo:  '/assets/aboutus/About2.png',
     name: "Nikil Shrestha",
     role: "Project Manager",
   },
   {
     id: 3,
-    photo: About3,
+    photo:  '/assets/aboutus/About3.png',
     name: "Ankit Shiwakoti",
     role: "Developer",
   },
   {
     id: 4,
-    photo: About4,
+    photo:  '/assets/aboutus/About4.png',
     name: "Nabina Shahi",
     role: "Designer",
   },
@@ -44,7 +38,7 @@ const Aboutus = () => {
             <div>
               <Image
                 alt="portfolio banner"
-                src={Banner1}
+                src="/assets/aboutus/banner1.png"
                 className="img-fluid w-100"
               />
             </div>
@@ -103,7 +97,7 @@ const Aboutus = () => {
           </div>
           <div className="col-md-12 col-lg-12 py-5 ">
             <Image
-              src={Banner2}
+              src="/assets/aboutus/banner2.png"
               className="img-fluid w-100"
               alt="about us img"
             />

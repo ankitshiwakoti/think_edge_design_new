@@ -1,90 +1,77 @@
 import Image from "next/image";
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import Banner1 from "../public/assets/aboutus/banner1.png";
-import About1 from "../public/assets/aboutus/About1.png";
-import About2 from "../public/assets/aboutus/About2.png";
-import About3 from "../public/assets/aboutus/About3.png";
-import About4 from "../public/assets/aboutus/About4.png";
-import About5 from "../public/assets/aboutus/About5.png";
-import About6 from "../public/assets/aboutus/About6.png";
-import About7 from "../public/assets/aboutus/About7.png";
-import About8 from "../public/assets/aboutus/About8.png";
-import About9 from "../public/assets/aboutus/About9.png";
-import About10 from "../public/assets/aboutus/About10.png";
-import About11 from "../public/assets/aboutus/About11.png";
-import About12 from "../public/assets/aboutus/About12.png";
 
 const data = [
   {
     id: 1,
-    photo: About1,
+    photo: '/assets/aboutus/About1.png',
     name: "Anil keshari",
     role: "CEO",
   },
   {
     id: 2,
-    photo: About2,
+    photo:  '/assets/aboutus/About2.png',
     name: "Nikil Shrestha",
     role: "Project Manager",
   },
   {
     id: 3,
-    photo: About3,
+    photo:  '/assets/aboutus/About3.png',
     name: "Ankit Shiwakoti",
     role: "Developer",
   },
   {
     id: 4,
-    photo: About4,
+    photo:  '/assets/aboutus/About4.png',
     name: "Nabina Shahi",
     role: "Designer",
   },
   {
     id: 5,
-    photo: About5,
+    photo:  '/assets/aboutus/About5.png',
     name: "Anil keshari",
     role: "CEO",
   },
   {
     id: 6,
-    photo: About6,
+    photo:  '/assets/aboutus/About6.png',
     name: "Nikil Shrestha",
     role: "Project Manager",
   },
   {
     id: 7,
-    photo: About7,
+    photo:  '/assets/aboutus/About7.png',
     name: "Ankit Shiwakoti",
     role: "Developer",
   },
   {
     id: 8,
-    photo: About8,
+    photo:  '/assets/aboutus/About8.png',
     name: "Nabina Shahi",
     role: "Designer",
   },
   {
     id: 9,
-    photo: About9,
+    photo:  '/assets/aboutus/About9.png',
     name: "Anil keshari",
     role: "CEO",
   },
   {
     id: 10,
-    photo: About10,
+    photo:  '/assets/aboutus/About10.png',
     name: "Nikil Shrestha",
     role: "Project Manager",
   },
   {
     id: 11,
-    photo: About11,
+    photo:  '/assets/aboutus/About11.png',
     name: "Ankit Shiwakoti",
     role: "Developer",
   },
   {
     id: 12,
-    photo: About12,
+    photo:  '/assets/aboutus/About12.png',
     name: "Nabina Shahi",
     role: "Designer",
   },
@@ -99,7 +86,7 @@ const Team = () => {
             <div>
               <Image
                 alt="portfolio banner"
-                src={Banner1}
+                src="/assets/aboutus/banner1.png"
                 className="img-fluid w-100"
               />
             </div>
