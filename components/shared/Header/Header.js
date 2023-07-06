@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <section className="  " style={{ position: "static" }}>
       <nav
-        className=" mx-auto  navbar  navbar-expand-lg p-4  fixed-top "
+        className=" mx-auto  navbar shadow-lg  navbar-expand-lg p-4  fixed-top "
         style={{ backgroundColor: "#FFFEFE" }}
       >
         <div className="container  p-0">
