@@ -95,26 +95,25 @@ const Form1 = () => {
             style={{
               width: "97rem",
               borderRadius: "10px",
-              Color: "#ABABAB",
+
               backgroundColor: "transparent",
             }}
-            className=" pe-0 px-4 py-md-3 py-2 formContainer inputfs w-100"
+            className=" pe-0 px-4 py-md-3 py-2 formContainer text-white inputfs w-100"
           >
             {/* TextField Inputs */}
             <div className="d-grid ">
               <Form.Group
-                className="  mt-2 pb-0 mt-md-0 py-xl-2 w-100 me-3"
-                style={{ color: "#525252", backgroundColor: "transparent" }}
+                className="  mt-2 pb-0 mt-md-0 py-xl-2 w-100 me-3 text-white"
+                style={{ backgroundColor: "transparent" }}
               >
                 <lable htmlFor="name">Name</lable>
                 <FastField
-                  className="rounded-0 form-control  bordertry"
+                  className="rounded-0 form-control text-white  bordertry"
                   placeholder="Steven Jackson*"
                   type="text"
                   id="name"
                   name="textField[0].fullName"
                   style={{
-                    color: "#ababab",
                     backgroundColor: "transparent",
                   }}
                 />
@@ -123,30 +122,28 @@ const Form1 = () => {
                   component={TextError}
                 />
               </Form.Group>
-              <div className=" mt-2 pb-0 mt-md-0 pt-2">
+              <div className=" mt-2 pb-0 mt-md-0 pt-2 text-white">
                 <lable
-                  className=""
+                  className="text-white"
                   style={{
-                    backgroundColor: "#F2F1EB",
-                    color: "#525252",
+                    backgroundColor: "transparent",
                   }}
                   htmlFor="name"
                 >
                   Phone no.
                 </lable>
                 <Form.Group
-                  className=" rounded-0  bordertry   w-100 form-control"
-                  style={{ color: "#525252", backgroundColor: "#F2F1EB" }}
+                  className=" rounded-0  bordertry text-white  w-100 form-control"
+                  style={{ backgroundColor: "transparent" }}
                 >
                   <PhoneInput
-                    className=""
+                    className="text-white"
                     placeholder="Phone *"
                     value={value}
                     onChange={setValue}
                     defaultCountry="AU"
                     style={{
-                      backgroundColor: "#F2F1EB",
-                      color: "#ababab",
+                      backgroundColor: "transparent",
                     }}
                     // style={{ backgroundColor: "black", color: "black" }}
                     // error={
@@ -166,37 +163,35 @@ const Form1 = () => {
               </div>
             </div>
             <Form.Group
-              className="mt-2 mt-md-0 py-xl-2 w-100 me-3"
-              style={{ color: "#525252", backgroundColor: "#F2F1EB" }}
+              className="mt-2 mt-md-0 py-xl-2 w-100 me-3 text-white"
+              style={{ backgroundColor: "transparent" }}
             >
               <lable htmlFor="name">Email Address</lable>
               <FastField
-                className=" imputborder bordertry rounded-0 form-control   "
+                className=" imputborder text-white bordertry rounded-0 form-control   "
                 placeholder="ankit.shiwakoti.com.np"
                 type="email"
                 id="email"
                 name="textField[0].email"
                 style={{
-                  color: "#ababab",
-
-                  backgroundColor: "#F2F1EB",
+                  backgroundColor: "transparent",
                 }}
               />
               <ErrorMessage name="textField[0].email" component={TextError} />
             </Form.Group>
             <Form.Group
-              className="mt-0 mt-md-0 py-2"
-              style={{ color: "#525252", backgroundColor: "#F2F1EB" }}
+              className="mt-0 mt-md-0 py-2 text-white"
+              style={{ backgroundColor: "transparent" }}
             >
               <lable htmlFor="name">Message</lable>
               <FastField
                 rows={5}
-                className=" rounded-0 form-control bordertry "
+                className=" rounded-0 form-control text-white bordertry "
                 placeholder="Message*"
                 as="textarea"
                 id="message"
                 name="textField[0].message"
-                style={{ color: "#ABABAB", backgroundColor: "#F2F1EB" }}
+                style={{ backgroundColor: "transparent" }}
               />
               <ErrorMessage name="textField[0].message" component={TextError} />
             </Form.Group>
@@ -208,9 +203,9 @@ const Form1 = () => {
                 disabled={loading}
                 style={{
                   cursor: "pointer",
-                  color: "#212121",
-                  backgroundColor: "#F2F1EB",
-                  borderColor: "red",
+                  color: "#FFFEFE",
+                  backgroundColor: "#A18565",
+                  borderColor: "#FFFEFE",
                 }}
               >
                 <span className="p-2 "> Submit </span>

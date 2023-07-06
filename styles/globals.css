@@ -556,7 +556,7 @@ dl {
 /* form  */
 
 .bordertry {
-  border: #895d2b !important;
+  border: #ababab !important;
   border-style: solid !important;
   border-width: 1px !important;
 }
@@ -568,23 +568,26 @@ dl {
 
 .PhoneInputInput {
   border: none !important;
-  background-color: #f2f1eb !important;
-  color: #ababab !important;
+  background-color: transparent !important;
+  color: #fafafa !important;
 }
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #ababab !important;
+  color: #fafafa !important;
   opacity: 1; /* Firefox */
+  background-color: transparent !important;
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #ababab !important;
+  color: #fafafa !important;
+  background-color: transparent !important;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #ababab !important;
+  color: #fafafa !important;
+  background-color: transparent !important;
 }
 
 /* .fofn {
