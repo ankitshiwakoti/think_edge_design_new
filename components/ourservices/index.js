@@ -8,11 +8,10 @@ const Ourservices = () => {
     <section>
       <Container>
         <h2 className="fw-normal mt-4 pt-5 p-0">OUR SERVICES</h2>
-        <h2>Checking</h2>
         <div className="ourserviceline "></div>
       </Container>
       <Container fluid className="">
-        <Row className="p-0">
+        <Row className="">
           {data?.map((items, index) => (
             <Row>
               <div
@@ -25,7 +24,7 @@ const Ourservices = () => {
               >
                 <div className="col-md-6 col-lg-6"></div>
 
-                <div className="col-md-7 pt-4   col-lg-7 ms-5 p-5 ps-4 mt-1  position-absolute ">
+                <div className="col-md-7 pt-4   col-lg-7 ms-5 p-5 ps-4   position-absolute ">
                   <Image
                     src={items.image}
                     className="img-fluid"
@@ -35,12 +34,12 @@ const Ourservices = () => {
                   />
                 </div>
                 <div
-                  className={`col-md-6 col-lg-6 p-5 ms-5 mb-4  ${
+                  className={`col-md-6 col-lg-6 col-sm-12 p-5 ms-5 mb-4  ${
                     index % 2 === 0 ? "pe-0 " : "ps-0"
                   }`}
-                  style={{ backgroundColor: "#FFFCF8" }}
+                  style={{ backgroundColor: "green" }}
                 >
-                  <div className="p-3 px-5 py-5 ">
+                  <div className=" p-5 ">
                     <h2 className="mb-2"> {items.title}</h2>
                     <p className="ourservicestext  lh-lg">{items.body}</p>
                     <div className="pt-4">
