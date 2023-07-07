@@ -29,6 +29,8 @@ const Ourservices = () => {
                     src={items.image}
                     className="img-fluid"
                     alt="portfolio images"
+                    width={0}
+                    height={0}
                   />
                 </div>
                 <div

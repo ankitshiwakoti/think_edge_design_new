@@ -2,28 +2,35 @@ import React from "react";
 import { Container, Row } from "react-bootstrap";
 import Image from "next/image";
 
+import Banner1 from "../public/assets/aboutus/banner1.png";
+import Banner2 from "../public/assets/aboutus/banner2.png";
+import About1 from "../public/assets/aboutus/About1.png";
+import About2 from "../public/assets/aboutus/About2.png";
+import About3 from "../public/assets/aboutus/About3.png";
+import About4 from "../public/assets/aboutus/About4.png";
+
 const data = [
   {
     id: 1,
-    photo: '/assets/aboutus/About1.png',
+    photo: About1,
     name: "Anil keshari",
     role: "CEO ",
   },
   {
     id: 2,
-    photo:  '/assets/aboutus/About2.png',
+    photo: About2,
     name: "Nikil Shrestha",
     role: "Project Manager",
   },
   {
     id: 3,
-    photo:  '/assets/aboutus/About3.png',
+    photo: About3,
     name: "Ankit Shiwakoti",
     role: "Developer",
   },
   {
     id: 4,
-    photo:  '/assets/aboutus/About4.png',
+    photo: About4,
     name: "Nabina Shahi",
     role: "Designer",
   },
@@ -38,8 +45,10 @@ const Aboutus = () => {
             <div>
               <Image
                 alt="portfolio banner"
-                src="/assets/aboutus/banner1.png"
+                src={Banner1}
                 className="img-fluid w-100"
+                width={0}
+                height={0}
               />
             </div>
             <div
@@ -97,9 +106,11 @@ const Aboutus = () => {
           </div>
           <div className="col-md-12 col-lg-12 py-5 ">
             <Image
-              src="/assets/aboutus/banner2.png"
+              src={Banner2}
               className="img-fluid w-100"
               alt="about us img"
+              width={0}
+              height={0}
             />
           </div>
           <div className="col-md-12 col-lg-12 p-0">
@@ -130,6 +141,8 @@ const Aboutus = () => {
                       src={items.photo}
                       className="img-fluid"
                       alt="card images"
+                      width={0}
+                      height={0}
                     />
                     <div class="card-body text-center bg-designnonactive border-0 rounded-0">
                       <h2 class=" fw-light">{items.name}</h2>

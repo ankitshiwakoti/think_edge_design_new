@@ -87,42 +87,42 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
 
 // ya dekhi
-// .slidercontents{
-//  width: 100%;
-//  height: 100%;
-//   top: 0;
-//   left: 0;
-//   opacity: 0;
-//   background:black;
-//   transition: opacity 0.6s ease-in-out !important;
-//   cursor: pointer;
-// }
+.slidercontents{
+ width: 100%;
+ height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background:black;
+  transition: opacity 0.6s ease-in-out !important;
+  cursor: pointer;
+}
 
-// .content{
-//   position: absolute;
+.content{
+  position: absolute;
   
 
-//  width: 100%;
-//  height: 100%;
-//  display: flex;
-//  flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   
   
-// }
+}
 
 
-// .content h3{
-//   color: #F2F2F2 !important;
-// }
-// .content p{
-//   color: #F2F2F2 !important;
-// }
-// .slidercontents:hover{
-//   opacity: 0.6 !important;
-// } 
+.content h3{
+  color: #F2F2F2 !important;
+}
+.content p{
+  color: #F2F2F2 !important;
+}
+.slidercontents:hover{
+  opacity: 0.6 !important;
+} 
 
 // ya samman
 
