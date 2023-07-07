@@ -88,6 +88,8 @@ const Team = () => {
                 alt="portfolio banner"
                 src="/assets/aboutus/Banner1.png"
                 className="img-fluid w-100"
+                width={1920}
+                height={600}
               />
             </div>
             <div
@@ -106,13 +108,13 @@ const Team = () => {
         </Row>
       </Container>
 
-      <Container className="p-0">
+      <Container className="p-3 p-sm-0">
         <Row className=" p-0  bg-designnonactive py-5">
           <h2 className="py-3">MEET OUR TEAM</h2>
 
           {data?.map((items, index) => (
             <div
-              className=" col-md-3 col-lg-3 d-flex bg-designnonactive p-2"
+              className=" col-md-6 col-lg-3 col-sm-6 d-grid d-sm-flex bg-designnonactive p-2 "
               key={index}
             >
               <div class="card bg-designnonactive border-0 rounded-0">
@@ -120,6 +122,8 @@ const Team = () => {
                   src={items.photo}
                   className="img-fluid"
                   alt="card images"
+                  width={407}
+                  height={460}
                 />
                 <div class="card-body text-center bg-designnonactive border-0 rounded-0">
                   <h2 class=" fw-light">{items.name}</h2>

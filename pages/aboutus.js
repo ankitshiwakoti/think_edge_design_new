@@ -15,7 +15,7 @@ import Image from "next/image";
 const data = [
   {
     id: 1,
-    photo: "/assets/aboutus/About2.png",
+    photo: "/assets/aboutus/About1.png",
     name: "Anil keshari",
     role: "CEO ",
   },
@@ -27,13 +27,13 @@ const data = [
   },
   {
     id: 3,
-    photo: "/assets/aboutus/About12.png",
+    photo: "/assets/aboutus/About3.png",
     name: "Ankit Shiwakoti",
     role: "Developer",
   },
   {
     id: 4,
-    photo: "/assets/aboutus/About12.png",
+    photo: "/assets/aboutus/About4.png",
     name: "Nabina Shahi",
     role: "Designer",
   },
@@ -50,6 +50,8 @@ const Aboutus = () => {
                 alt="portfolio banner"
                 src="/assets/aboutus/Banner1.png"
                 className="img-fluid w-100"
+                width={1920}
+                height={600}
               />
             </div>
             <div
@@ -110,6 +112,8 @@ const Aboutus = () => {
               src="/assets/aboutus/Banner2.png"
               className="img-fluid w-100"
               alt="about us img"
+              width={1720}
+              height={600}
             />
           </div>
           <div className="col-md-12 col-lg-12 p-0">
@@ -140,6 +144,8 @@ const Aboutus = () => {
                       src={items.photo}
                       className="img-fluid"
                       alt="card images"
+                      width={407}
+                      height={460}
                     />
                     <div class="card-body text-center bg-designnonactive border-0 rounded-0">
                       <h2 class=" fw-light">{items.name}</h2>

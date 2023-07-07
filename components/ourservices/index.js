@@ -19,21 +19,23 @@ const Ourservices = () => {
                 key={items.id}
                 className={`col-md-12 mt-5 col-lg-12 gap-4 position-relative ${
                   index % 2 === 0
-                    ? "d-sm-flex d-grid flex-row gap-1 "
-                    : "d-sm-flex d-grid  flex-row-reverse gap-1"
+                    ? "d-sm-flex d-grid flex-row  "
+                    : "d-sm-flex d-grid  flex-row-reverse "
                 }`}
               >
                 <div className="col-md-6 col-lg-6"></div>
 
-                <div className="col-md-7 pt-4   col-lg-7 ms-5 p-5 ps-4 mt-1  position-absolute">
+                <div className="col-md-7 pt-4   col-lg-7 ms-5 p-5 ps-4 mt-1  position-absolute ">
                   <Image
                     src={items.image}
                     className="img-fluid"
                     alt="portfolio images"
+                    width={987}
+                    height={500}
                   />
                 </div>
                 <div
-                  className={`col-md-6 col-lg-6 p-5 ms-5  mb-4 ${
+                  className={`col-md-6 col-lg-6 p-5 ms-5 mb-4  ${
                     index % 2 === 0 ? "pe-0 " : "ps-0"
                   }`}
                   style={{ backgroundColor: "#FFFCF8" }}
