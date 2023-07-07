@@ -8,6 +8,7 @@ const Ourservices = () => {
     <section>
       <Container>
         <h2 className="fw-normal mt-4 pt-5 p-0">OUR SERVICES</h2>
+        <h2>Checking</h2>
         <div className="ourserviceline "></div>
       </Container>
       <Container fluid className="">
@@ -29,8 +30,6 @@ const Ourservices = () => {
                     src={items.image}
                     className="img-fluid"
                     alt="portfolio images"
-                    width={0}
-                    height={0}
                   />
                 </div>
                 <div
