@@ -15,7 +15,7 @@ import Image from "next/image";
 const data = [
   {
     id: 1,
-    photo: "../assets/aboutus/About1.png",
+    photo: "/assets/aboutus/About1.png",
     name: "Anil keshari",
     role: "CEO ",
   },
