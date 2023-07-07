@@ -9,7 +9,7 @@ export const data = [
     id: 2,
     title: "AUTOCAD DRAFTING",
     body: "With the help of our talented pool of interior designers and architects, we provide unparallel interior design solutions that leave our clients content and satisfied. Our services cover a wide array of requirements, ranging from  designs to furniture placement color selection.It leave our clients content and satisfied. Our services cover a wide array of requirements, ranging from  designs to furniture placement color selection ",
-    image: "/assets/ourservices/Service2.png",
+    image: "/assets/ourservices/Service1.png",
   },
   {
     id: 3,

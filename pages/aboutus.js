@@ -15,7 +15,7 @@ import Image from "next/image";
 const data = [
   {
     id: 1,
-    photo: "/assets/aboutus/About1.png",
+    photo: "/assets/aboutus/About2.png",
     name: "Anil keshari",
     role: "CEO ",
   },
@@ -27,13 +27,13 @@ const data = [
   },
   {
     id: 3,
-    photo: "/assets/aboutus/About3.png",
+    photo: "/assets/aboutus/About12.png",
     name: "Ankit Shiwakoti",
     role: "Developer",
   },
   {
     id: 4,
-    photo: "/assets/aboutus/About4.png",
+    photo: "/assets/aboutus/About12.png",
     name: "Nabina Shahi",
     role: "Designer",
   },
@@ -48,10 +48,8 @@ const Aboutus = () => {
             <div>
               <Image
                 alt="portfolio banner"
-                src="/assets/aboutus/banner1.png"
+                src="/assets/aboutus/Banner1.png"
                 className="img-fluid w-100"
-                width={0}
-                height={0}
               />
             </div>
             <div
@@ -109,11 +107,9 @@ const Aboutus = () => {
           </div>
           <div className="col-md-12 col-lg-12 py-5 ">
             <Image
-              src="/assets/aboutus/banner2.png"
+              src="/assets/aboutus/Banner2.png"
               className="img-fluid w-100"
               alt="about us img"
-              width={0}
-              height={0}
             />
           </div>
           <div className="col-md-12 col-lg-12 p-0">
@@ -144,8 +140,6 @@ const Aboutus = () => {
                       src={items.photo}
                       className="img-fluid"
                       alt="card images"
-                      width={0}
-                      height={0}
                     />
                     <div class="card-body text-center bg-designnonactive border-0 rounded-0">
                       <h2 class=" fw-light">{items.name}</h2>

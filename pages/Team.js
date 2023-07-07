@@ -5,73 +5,73 @@ import { Container, Row } from "react-bootstrap";
 const data = [
   {
     id: 1,
-    photo: '/assets/aboutus/About1.png',
+    photo: "/assets/aboutus/About1.png",
     name: "Anil keshari",
     role: "CEO",
   },
   {
     id: 2,
-    photo:  '/assets/aboutus/About2.png',
+    photo: "/assets/aboutus/About2.png",
     name: "Nikil Shrestha",
     role: "Project Manager",
   },
   {
     id: 3,
-    photo:  '/assets/aboutus/About3.png',
+    photo: "/assets/aboutus/About3.png",
     name: "Ankit Shiwakoti",
     role: "Developer",
   },
   {
     id: 4,
-    photo:  '/assets/aboutus/About4.png',
+    photo: "/assets/aboutus/About4.png",
     name: "Nabina Shahi",
     role: "Designer",
   },
   {
     id: 5,
-    photo:  '/assets/aboutus/About5.png',
+    photo: "/assets/aboutus/About5.png",
     name: "Anil keshari",
     role: "CEO",
   },
   {
     id: 6,
-    photo:  '/assets/aboutus/About6.png',
+    photo: "/assets/aboutus/About6.png",
     name: "Nikil Shrestha",
     role: "Project Manager",
   },
   {
     id: 7,
-    photo:  '/assets/aboutus/About7.png',
+    photo: "/assets/aboutus/About7.png",
     name: "Ankit Shiwakoti",
     role: "Developer",
   },
   {
     id: 8,
-    photo:  '/assets/aboutus/About8.png',
+    photo: "/assets/aboutus/About8.png",
     name: "Nabina Shahi",
     role: "Designer",
   },
   {
     id: 9,
-    photo:  '/assets/aboutus/About9.png',
+    photo: "/assets/aboutus/About9.png",
     name: "Anil keshari",
     role: "CEO",
   },
   {
     id: 10,
-    photo:  '/assets/aboutus/About10.png',
+    photo: "/assets/aboutus/About10.png",
     name: "Nikil Shrestha",
     role: "Project Manager",
   },
   {
     id: 11,
-    photo:  '/assets/aboutus/About11.png',
+    photo: "/assets/aboutus/About11.png",
     name: "Ankit Shiwakoti",
     role: "Developer",
   },
   {
     id: 12,
-    photo:  '/assets/aboutus/About12.png',
+    photo: "/assets/aboutus/About12.png",
     name: "Nabina Shahi",
     role: "Designer",
   },
@@ -86,7 +86,7 @@ const Team = () => {
             <div>
               <Image
                 alt="portfolio banner"
-                src="/assets/aboutus/banner1.png"
+                src="/assets/aboutus/Banner1.png"
                 className="img-fluid w-100"
               />
             </div>
