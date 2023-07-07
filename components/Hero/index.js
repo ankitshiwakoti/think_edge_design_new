@@ -186,8 +186,8 @@ const Hero = () => {
                       </h1>
 
                       <div
-                        className="mt-5 text-center herobtn divbutton btn shadow-sm border border-white text-white border-opacity-25 text-primary rounded-0"
-                        style={{ color: "white" }}
+                        className="mt-5 text-center herobtn  divbutton btn shadow-sm border border-white text-white border-opacity-25  rounded-0"
+                        style={{ backgroundColor: "transparent" }}
                       >
                         <span className="p-2 "> LEARN MORE</span>
                         <span className="pe-2 ">

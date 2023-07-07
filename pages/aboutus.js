@@ -136,10 +136,10 @@ const Aboutus = () => {
             <div className="col-md-12 col-lg-12  d-flex bg-designnonactive p-0 py-5">
               {data?.map((items, index) => (
                 <div
-                  className=" col-md-3 col-lg-3  bg-designnonactive p-3"
+                  className=" col-md-3 col-lg-3  bg-designnonactive p-2"
                   key={index}
                 >
-                  <div class="card bg-designnonactive border-0 rounded-0">
+                  <div class="card bg-designnonactive border-0 rounded-0 ">
                     <Image
                       src={items.photo}
                       className="img-fluid"

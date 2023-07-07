@@ -12800,4 +12800,28 @@ textarea.form-control-lg {
 
 .slidercontents:hover {
   opacity: 0.6 !important;
+}
+
+.contact ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff !important;
+  opacity: 1; /* Firefox */
+  background-color: transparent !important;
+}
+
+.contact ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff !important;
+  opacity: 1; /* Firefox */
+  background-color: transparent !important;
+}
+.contact :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+.contact ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ffffff !important;
+  background-color: transparent !important;
 }/*# sourceMappingURL=main.css.map */

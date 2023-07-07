@@ -124,6 +124,27 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
   opacity: 0.6 !important;
 } 
 
+.contact{
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff !important;
+  opacity: 1; /* Firefox */
+  background-color: transparent !important;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+}
 // ya samman
 
 

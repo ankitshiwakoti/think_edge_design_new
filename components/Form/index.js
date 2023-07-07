@@ -82,7 +82,7 @@ const Form1 = () => {
     }
   };
   return (
-    <Row>
+    <Row className="contact">
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
