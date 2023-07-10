@@ -218,16 +218,18 @@ const Header = () => {
                 >
                   <span className="p-3 ">REQUEST A DEMO</span>
                 </div>
-                <div
-                  className=" divbutton p-2 text-white  btn border border-1  rounded-0 "
-                  style={{
-                    background: "#A18565",
-                    color: "#212121",
-                    overflow: "hidden",
-                  }}
-                >
-                  <span className="p-3 ">GET IN TOUCH </span>
-                </div>
+                <Link href="/Contactus">
+                  <div
+                    className=" divbutton p-2 text-white  btn border border-1  rounded-0 "
+                    style={{
+                      background: "#A18565",
+                      color: "#212121",
+                      overflow: "hidden",
+                    }}
+                  >
+                    <span className="p-3 ">GET IN TOUCH </span>
+                  </div>
+                </Link>
               </form>
             </div>
           </div>

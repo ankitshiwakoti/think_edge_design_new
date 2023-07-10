@@ -6,12 +6,12 @@ import Image from "next/image.js";
 const Ourservices = () => {
   return (
     <section>
-      <Container>
-        <h2 className="fw-normal mt-4 pt-5 p-0">OUR SERVICES</h2>
+      <Container className="p-0">
+        <h2 className="fw-normal mt-4 pt-5 p-0 ms-0">OUR SERVICES</h2>
         <div className="ourserviceline "></div>
       </Container>
-      <Container fluid className="">
-        <Row className="">
+      <Container fluid>
+        <Row>
           {data?.map((items, index) => (
             <Row>
               <div
