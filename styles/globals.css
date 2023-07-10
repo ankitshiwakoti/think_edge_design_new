@@ -669,3 +669,10 @@ dl {
   width: 100px;
 }
 /* service slug page end */
+
+/* header */
+.maincontainer {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}

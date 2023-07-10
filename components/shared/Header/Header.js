@@ -3,9 +3,9 @@ import React from "react";
 
 const Header = () => {
   return (
-    <section className="  " style={{ position: "static" }}>
+    <section className="maincontainer " style={{ zIndex: "5" }}>
       <nav
-        className=" mx-auto  navbar shadow-lg  navbar-expand-lg p-4  fixed-top "
+        className=" mx-auto  navbar shadow-lg  navbar-expand-lg p-4  "
         style={{ backgroundColor: "#FFFEFE" }}
       >
         <div className="container  p-0">

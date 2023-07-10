@@ -29,7 +29,7 @@ const Who = () => {
       <Container className="">
         <Row className="">
           <h2 className="p-0 fw-medium text-uppercase">who we are?</h2>
-          <Col xs={12} sm={12} md={6} lg={6} className="p-0">
+          <Col xs={12} sm={12} md={12} lg={6} className="p-0">
             <div className="mt-4 who">
               <div
                 data-aos="zoom-in"
@@ -69,7 +69,7 @@ const Who = () => {
               </div>
             </div>
           </Col>
-          <Col xs={12} sm={12} md={6} lg={6} className="pe-0">
+          <Col xs={12} sm={12} md={12} lg={6} className="pe-0">
             {/* <div data-aos="fade-left"></div> */}
             <div
               className="mt-4"
