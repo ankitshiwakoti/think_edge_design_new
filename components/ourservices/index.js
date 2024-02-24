@@ -37,7 +37,7 @@ const Ourservices = () => {
                   className={`col-md-6 col-lg-6 col-sm-12 p-5 ms-5 mb-4  ${
                     index % 2 === 0 ? "pe-0 " : "ps-0"
                   }`}
-                  style={{ backgroundColor: "green" }}
+                  style={{ backgroundColor: "#EBE7E6" }}
                 >
                   <div className=" p-5 ">
                     <h2 className="mb-2"> {items.title}</h2>
